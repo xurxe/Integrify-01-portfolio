@@ -1,42 +1,48 @@
 @charset "UFT-8";
+body {
+  margin: 0;
+}
 
 /* =====HEADER===== */
-#sidebar {
-    text-align: left;
-    width: 10%;
-    border: 2px solid black;
-    display: inline-block
-    width:10%;
+header {
+  text-align: left;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  background-color: #8844bb;
+  color: white;
+  display: inline-block;
+  padding-left: 20px; /* figure out why these 20px to the right here move the main 20px to the left*/
+  padding-top: 0;
+  margin: 0;
 }
 
-#sidebar li {
-    text-align: left;
-    list-style: none;
+header a {
+  color: white;
+  text-decoration: none;
 }
 
-#sidebar li a {
-    text-decoration: none;
+header a:hover {
+  color: #ffeeaa;
+  text-decoration: none;
 }
 
-#navigation-bar {
-    margin-left: 10%;
-    width:90%;
-    border: 2px solid black;
-    display: inline-block
+#portfolio,
+#personal {
+  line-height: 1.5;
+  margin-top: 2em;
 }
 
-#navigation-bar li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 10%;
-}
-
-#navigation-bar li a {
-    text-decoration: none;
+#social-media {
+  position: absolute;
+  bottom: 2em;
+  line-height: 1.5;
 }
 
 /* =====MAIN===== */
-
+main {
+  color: #08040b;
+  margin-left: 200px; /* Same as the width of the sidebar */
+}
 
 /* =====FOOTER===== */
-
