@@ -1,0 +1,42 @@
+@charset "UFT-8";
+
+/* =====HEADER===== */
+#sidebar {
+    text-align: left;
+    width: 10%;
+    border: 2px solid black;
+    display: inline-block
+    width:10%;
+}
+
+#sidebar li {
+    text-align: left;
+    list-style: none;
+}
+
+#sidebar li a {
+    text-decoration: none;
+}
+
+#navigation-bar {
+    margin-left: 10%;
+    width:90%;
+    border: 2px solid black;
+    display: inline-block
+}
+
+#navigation-bar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10%;
+}
+
+#navigation-bar li a {
+    text-decoration: none;
+}
+
+/* =====MAIN===== */
+
+
+/* =====FOOTER===== */
+
