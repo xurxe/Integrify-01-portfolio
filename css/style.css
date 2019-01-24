@@ -1,12 +1,20 @@
 @charset "UFT-8";
 
+/* COLOR SCHEME
+lightest #D5A3FB
+light #AF6BE3
+medium #8844BB
+dark 622B8D 
+darkest #311845
+*/
+
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Catamaran', sans-serif;
-  font-size:18px;
   text-decoration: none;
   text-align: left;
-  color: #08040b;
+  color: #311845;
 }
 
 .nav-links {
@@ -32,6 +40,7 @@ header div {
 }
 
 header a {
+  font-size: 13pt;
   color: white;
 }
 
@@ -62,19 +71,37 @@ header a:hover {
 }
 
 #name-home a {
-  font-size: 20pt !important;
+  font-size: 20pt;
   line-height: 1.2;
 }
 
 /* # MAIN */
 main {
-  margin-left: 150px; /* Same as the width of the sidebar */
-  padding: 20px;
-  /*border: 2px solid black; /* figure out why everything moves down when I don't add this border*/
+  margin-left: 130px; /* Same as the width of the sidebar */
+  padding: 40px;
+  
 }
 
-/* main p {
-  padding-left: 20px;
-} */
+#hello {
+  font-size: 40pt;
+  line-height: 1.2;
+  padding-bottom: 30px;
+}
 
-/* =====FOOTER===== */
+dl {
+  width: 100%;
+  overflow: hidden;
+  font-size: 18pt;
+}
+dt {
+  float: left;
+  width: 20%;
+  /* adjust the width; make sure the total of both is 100% */
+  font-weight: bolder;
+}
+dd {
+  float: left;
+  width: 80%;
+  /* adjust the width; make sure the total of both is 100% */
+}
+
