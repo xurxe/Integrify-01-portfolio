@@ -36,29 +36,13 @@ header {
   align-items:stretch;
 }
 
-.nav-links {
-  padding: 0 0 1.2rem 1.2rem;
-  line-height: 1.5;
-}
 
-header a {
-  font-size: 0.85rem;
-  color: white;
-  letter-spacing: 0.1em;
-}
-
-header a:hover { /* idea instead of this: extend dot into line when hovering */
-  color: #ffeeaa;
-}
-
-
-
-/* ## HEADER TOP AND BOTTOM DIVS*/
+/* ## HEADER DIVS: TOP AND BOTTOM*/
 
 header div {
   display: flex;
   flex-direction: column;
-  align-items:flex-start;
+  align-items: space-between;
 }
 
 #header-top {
@@ -72,6 +56,21 @@ header div {
 /* ### HEADER SECTIONS */
 header section {
   width: auto;
+}
+
+header a {
+  font-size: 0.85rem;
+  color: white;
+  letter-spacing: 0.1em;
+}
+
+header a:hover { /* idea instead of this: extend dot into line when hovering */
+  color: #ffeeaa;
+}
+
+.nav-links {
+  padding: 0 0 1.2rem 1.2rem;
+  line-height: 1.5;
 }
 
 #logo-home{
@@ -95,6 +94,8 @@ main {
   margin-left: 9rem; /* Same as the width of the sidebar */
   padding: 1rem 2rem 1rem;
 }
+
+/* ## MAIN INTRO (HELLO + PASSIONS) */
 
 #intro {
   display: flex;
@@ -126,33 +127,43 @@ main {
   color: #622B8D;
 }
 
+/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) */
+
 .grid {
   display: grid;
   grid-template-columns: 35vw 35vw;
-  grid-template-rows: repeat(2, 35vw 10vw);
+  grid-template-rows: 45vw;
   grid-row-gap: 0;
   grid-column-gap: 2rem;
   justify-items: center;
   align-items: center;
 }
+
+.subgrid {
+  display: grid;
+  grid-template-columns: 35vw;
+  grid-template-rows: 35vw 10vw;
+  justify-items: center;
+  align-items: center;
+}
+
 .thumbnail {
   justify-self: stretch;
   align-self: stretch;
+  grid-row:1;
+  grid-column:1;
 }
 
 .legend {
   justify-self: start;
   align-self: start;
   padding-top: 0.5rem;
+  grid-row:2;
+  grid-column:1;
 }
 
 #creation1 {
   grid-row: 1;
-  grid-column: 1;
-}
-
-#legend1 {
-  grid-row: 2;
   grid-column: 1;
 }
 
@@ -161,28 +172,14 @@ main {
   grid-column: 2;
 }
 
-#legend2 {
-  grid-row: 2;
-  grid-column: 2;
-}
-
 #creation3 {
-  grid-row: 3;
-  grid-column: 1;
-}
-
-#legend3 {
-  grid-row: 4;
+  grid-row: 2;
   grid-column: 1;
 }
 
 #creation4 {
-  grid-row: 3;
+  grid-row: 2;
   grid-column: 2;
 }
 
-#legend4 {
-  grid-row: 4;
-  grid-column: 2;
-}
 
