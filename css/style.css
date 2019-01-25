@@ -25,7 +25,7 @@ html {
 
 /* # HEADER */
 header {
-  width: 8.5rem; /* same as main margin */
+  width: 9rem; /* same as main margin */
   height: 100%;
   position: fixed;
   background-color: #8844bb;
@@ -36,8 +36,13 @@ header {
   align-items:stretch;
 }
 
+.nav-links {
+  padding: 0 0 1.2rem 1.2rem;
+  line-height: 1.5;
+}
+
 header a {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
   color: white;
   letter-spacing: 0.1em;
 }
@@ -46,11 +51,7 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
   color: #ffeeaa;
 }
 
-.nav-links {
-  padding: 0px 0px 1.5rem 1.5rem;
-  line-height: 1.2;
-  letter-spacing: 0.1 em;
-}
+
 
 /* ## HEADER TOP AND BOTTOM DIVS*/
 
@@ -70,12 +71,16 @@ header div {
 
 /* ### HEADER SECTIONS */
 header section {
-  width: 100%;
+  width: auto;
 }
 
-#logo-home {
-  height: 6rem;
+#logo-home{
+  padding: 1.2rem;
 }
+
+#logo {
+  width: 100%;
+} 
 
 #name-home a { /* TODO: integrate with logo */
   font-size: 1.2rem;
@@ -87,9 +92,8 @@ header section {
 
 /* # MAIN */
 main {
-  margin-left: 8.5rem; /* Same as the width of the sidebar */
-  padding-top: 1rem;
-  padding-left: 2rem;
+  margin-left: 9rem; /* Same as the width of the sidebar */
+  padding: 1rem 2rem 1rem;
 }
 
 #intro {
@@ -101,11 +105,16 @@ main {
 #hello {
   font-size: 2rem;
   line-height: 1.2;
-  padding-top: 0.5rem;
-  padding-bottom: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   color: #622B8D;
+}
+
+#passions {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 #passions p {
@@ -115,5 +124,65 @@ main {
 .bigger {
   font-size: 1.5rem;
   color: #622B8D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: repeat(2, 35vw 10vw);
+  grid-row-gap: 0;
+  grid-column-gap: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.thumbnail {
+  justify-self: stretch;
+  align-self: stretch;
+}
+
+.legend {
+  justify-self: start;
+  align-self: start;
+  padding-top: 0.5rem;
+}
+
+#creation1 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#legend1 {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#creation2 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#legend2 {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+#creation3 {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+#legend3 {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+#creation4 {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+#legend4 {
+  grid-row: 4;
+  grid-column: 2;
 }
 
