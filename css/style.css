@@ -4,27 +4,50 @@
 lightest #D5A3FB
 light #AF6BE3
 medium #8844BB
-dark 622B8D 
+dark #622B8D 
 darkest #311845
 */
+
+/*
+font-family: 'Comfortaa', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Krub', sans-serif;
+font-family: 'Andika', sans-serif;
+font-family: 'Raleway', sans-serif; (from 100 to 900)
+*/
+
+/* html {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px;
+  }
+} */
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Catamaran', sans-serif;
   text-decoration: none;
-  text-align: left;
-  color: #311845;
 }
 
-.nav-links {
-  padding: 0px 0px 20px 20px;
-  line-height: 1.3;
+html {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color: #311845;
+  font-size: 18pt;
 }
+
 
 /* # HEADER */
 header {
-  width: 130px;
+  width: 6rem; /* same as main margin */
   height: 100%;
   position: fixed;
   background-color: #8844bb;
@@ -35,12 +58,8 @@ header {
   align-items:stretch;
 }
 
-header div {
-  width: 100%;
-}
-
 header a {
-  font-size: 13pt;
+  font-size: 0.7rem;
   color: white;
 }
 
@@ -48,60 +67,92 @@ header a:hover {
   color: #ffeeaa;
 }
 
+.nav-links {
+  padding: 0px 0px 20px 20px;
+  line-height: 1.2;
+  letter-spacing: 0.1 em;
+}
 
-/* ## HEADER TOP AND BOTTOM */
-#header-top {
+/* ## HEADER TOP AND BOTTOM DIVS*/
+
+header div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items:flex-start;
 }
 
-#header-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
+#header-top {
+  justify-content: flex-start;
 }
 
-/* ### HEADER DIVS */
+#header-bottom {
+  justify-content: flex-end;
+}
+
+/* ### HEADER SECTIONS */
+header section {
+  width: 100%;
+}
 
 #logo-home {
-  height: 130px;
+  height: 6rem;
 }
 
 #name-home a {
-  font-size: 20pt;
-  line-height: 1.2;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
 /* # MAIN */
 main {
-  margin-left: 130px; /* Same as the width of the sidebar */
-  padding: 40px;
-  
+  margin-left: 6rem; /* Same as the width of the sidebar */
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
 }
 
 #hello {
-  font-size: 40pt;
+  font-size: 1.5rem;
   line-height: 1.2;
-  padding-bottom: 30px;
+  padding-bottom: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #622B8D;
 }
 
 dl {
   width: 100%;
   overflow: hidden;
-  font-size: 18pt;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  vertical-align: bottom;
 }
 dt {
   float: left;
   width: 20%;
+  min-width: 7em;
   /* adjust the width; make sure the total of both is 100% */
-  font-weight: bolder;
+  font-weight: 900;
+  color: #622B8D;
+  font-size: 1.1rem;
 }
+
+dt::after {
+  content: ":";
+}
+
 dd {
   float: left;
   width: 80%;
   /* adjust the width; make sure the total of both is 100% */
+  font-weight: 100;
+  padding-bottom: 1rem;
 }
 
+.passions {
+  padding-bottom: 1rem;
+}
