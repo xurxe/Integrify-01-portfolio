@@ -8,29 +8,6 @@ dark #622B8D
 darkest #311845
 */
 
-/*
-font-family: 'Comfortaa', sans-serif;
-font-family: 'Ubuntu', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
-font-family: 'Krub', sans-serif;
-font-family: 'Andika', sans-serif;
-font-family: 'Raleway', sans-serif; (from 100 to 900)
-*/
-
-/* html {
-  font-size: 16px;
-}
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 22px;
-  }
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -41,13 +18,13 @@ html {
   font-family: 'Raleway', sans-serif;
   text-align: left;
   color: #311845;
-  font-size: 18pt;
+  font-size: 20pt;
 }
 
 
 /* # HEADER */
 header {
-  width: 6rem; /* same as main margin */
+  width: 8.5rem; /* same as main margin */
   height: 100%;
   position: fixed;
   background-color: #8844bb;
@@ -61,6 +38,7 @@ header {
 header a {
   font-size: 0.7rem;
   color: white;
+  letter-spacing: 0.1rem;
 }
 
 header a:hover {
@@ -68,7 +46,7 @@ header a:hover {
 }
 
 .nav-links {
-  padding: 0px 0px 20px 20px;
+  padding: 0px 0px 1.5rem 1.5rem;
   line-height: 1.2;
   letter-spacing: 0.1 em;
 }
@@ -98,14 +76,17 @@ header section {
   height: 6rem;
 }
 
-#name-home a {
-  font-size: 1rem;
-  line-height: 1.4;
+#name-home a { /* TODO: integrate with logo */
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.3;
+  letter-spacing: 0.2rem;
 }
+
 
 /* # MAIN */
 main {
-  margin-left: 6rem; /* Same as the width of the sidebar */
+  margin-left: 8.5rem; /* Same as the width of the sidebar */
   padding-top: 1rem;
   padding-left: 2rem;
 }
@@ -116,10 +97,11 @@ main {
 }
 
 #hello {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 1.2;
-  padding-bottom: 1rem;
-  font-weight: 900;
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+  font-weight: 500;
   letter-spacing: 0.1em;
   color: #622B8D;
 }
@@ -127,18 +109,21 @@ main {
 dl {
   width: 100%;
   overflow: hidden;
-  font-size: 0.8rem;
   line-height: 1.2;
-  vertical-align: bottom;
 }
-dt {
+
+dt, dd {
   float: left;
+  padding-bottom: 1em;
+}
+
+dt {
   width: 20%;
-  min-width: 7em;
-  /* adjust the width; make sure the total of both is 100% */
-  font-weight: 900;
+  min-width: 7em; /* adjust the width; make sure the total of both is 100% */
+  font-weight: 800;
   color: #622B8D;
-  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 dt::after {
@@ -146,13 +131,6 @@ dt::after {
 }
 
 dd {
-  float: left;
-  width: 80%;
-  /* adjust the width; make sure the total of both is 100% */
+  width: 80%; /* adjust the width; make sure the total of both is 100% */
   font-weight: 100;
-  padding-bottom: 1rem;
-}
-
-.passions {
-  padding-bottom: 1rem;
 }
