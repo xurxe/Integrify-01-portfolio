@@ -19,80 +19,57 @@ html {
   text-align: left;
   color: #311845;
   font-size: 1.85vw; /* not really what i want, but this will do for now */
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01vw;
 }
 
 
 /* # HEADER */
 header {
-  width: 9rem; /* same as main margin */
+  width: 20vh; /* same as main margin */
+  font-size: 2.8vh;
+  letter-spacing: 0.4vh;
+  line-height: 4vh;
+  padding: 5vh;
   height: 100%;
   position: fixed;
   background-color: #8844bb;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items:stretch;
-}
-
-
-/* ## HEADER DIVS: TOP AND BOTTOM*/
-
-header div {
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-}
-
-#header-top {
   justify-content: flex-start;
-}
-
-#header-bottom {
-  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 /* ### HEADER SECTIONS */
 header section {
   width: auto;
+  padding-bottom: 5vh;
 }
 
 header a {
-  font-size: 0.85rem;
   color: white;
-  letter-spacing: 0.1em;
 }
 
 header a:hover { /* idea instead of this: extend dot into line when hovering */
   color: #ffeeaa;
 }
 
-.nav-links {
-  padding: 0 0 1.2rem 1.2rem;
-  line-height: 1.5;
-}
-
-#logo-home{
-  padding: 1.2rem;
-}
 
 #logo {
   width: 100%;
+  padding: 0;
 } 
 
 #name-home a { /* TODO: integrate with logo */
-  font-size: 1.2rem;
+  font-size: 150%;
   text-transform: uppercase;
-  line-height: 1.3;
-  letter-spacing: 0.2em;
 }
 
 
 /* # MAIN */
 main {
-  margin-left: 9rem; /* Same as the width of the sidebar */
-  padding: 1rem 2rem 1rem;
+  margin-left: 30vh; /* Same as the width of the sidebar */
+  padding: 3vw;
 }
 
 /* ## MAIN INTRO (HELLO + PASSIONS) */
@@ -119,7 +96,7 @@ main {
 }
 
 #passions p {
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.7vw;
 }
 
 .bigger {
