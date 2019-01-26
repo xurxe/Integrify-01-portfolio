@@ -15,29 +15,29 @@ darkest #311845
 }
 
 html {
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
   color: #311845;
-  font-size: 1.85vw; /* not really what i want, but this will do for now */
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.85vw;
   letter-spacing: 0.01vw;
-}
+  text-align: left;
+  }
 
 
 /* # HEADER */
 header {
-  width: 20vh; /* same as main margin */
-  font-size: 2.8vh;
-  letter-spacing: 0.4vh;
-  line-height: 4vh;
-  padding: 5vh;
-  height: 100%;
-  position: fixed;
+  align-items: flex-start;
   background-color: #8844bb;
   color: white;
   display: flex;
   flex-direction: column;
+  font-size: 2.8vh;
+  height: 100%;
   justify-content: flex-start;
-  align-items: flex-start;
+  letter-spacing: 0.4vh;
+  line-height: 4vh;
+  padding: 5vh;
+  position: fixed;
+  width: 20vh; /* same as main margin */
 }
 
 /* ### HEADER SECTIONS */
@@ -54,8 +54,8 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 }
 
 #logo {
-  width: 100%;
   padding-bottom: 3vh;
+  width: 100%;
 } 
 
 #name-home { /* MAYBE: integrate with logo */
@@ -65,15 +65,15 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 
 #first-name {
   font-size: 200%;
-  text-transform: uppercase;
   letter-spacing: 0.25em;
-  line-height: 1.1em; 
+  line-height: 1.1em;
+  text-transform: uppercase;
 }
 
 #last-name {
   font-size: 130%;
-  text-transform: lowercase;
   letter-spacing: 0.45em;
+  text-transform: lowercase;
 }
 
 #portfolio, #personal {
@@ -87,7 +87,7 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 /* # MAIN */
 main {
   margin-left: 30vh; /* Same as the width of the sidebar */
-  padding: 3vw;
+  padding: 2vw 3vw;
 }
 
 /* ## MAIN INTRO (HELLO + PASSIONS) */
@@ -98,25 +98,25 @@ main {
   white-space: nowrap;
 }
 
-#hello {
+.largest {
+  color: #622B8D;
   font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   line-height: 2.3rem;
   padding-top: 0rem;
   padding-bottom: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: #622B8D;
 }
 
-#passions {
+.large {
   padding-bottom: 3rem;
 }
 
-#passions p {
+.large p {
   padding-bottom: 0.6vw;
 }
 
-.bigger {
+.larger {
   font-size: 1.5rem;
   color: #622B8D;
 }
@@ -124,56 +124,56 @@ main {
 /* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) */
 
 .grid {
+  align-items: center;
   display: grid;
+  grid-column-gap: 3vw;
+  grid-row-gap: 0;
   grid-template-columns: 37vw 37vw;
   grid-template-rows: 47vw;
-  grid-row-gap: 0;
-  grid-column-gap: 3vw;
   justify-items: center;
-  align-items: center;
 }
 
 .subgrid {
+  align-items: center;
   display: grid;
   grid-template-columns: 37vw;
   grid-template-rows: 37vw 10vw;
   justify-items: center;
-  align-items: center;
 }
 
 .thumbnail {
-  justify-self: stretch;
   align-self: stretch;
   grid-row:1;
   grid-column:1;
+  justify-self: stretch;
 }
 
 .legend {
-  justify-self: start;
   align-self: start;
-  padding-top: 0.5rem;
+  justify-self: start;
   grid-row:2;
   grid-column:1;
+  padding-top: 0.5rem;
 }
 
 #creation1 {
-  grid-row: 1;
   grid-column: 1;
+  grid-row: 1;
 }
 
 #creation2 {
-  grid-row: 1;
   grid-column: 2;
+  grid-row: 1;
 }
 
 #creation3 {
-  grid-row: 2;
   grid-column: 1;
+  grid-row: 2;
 }
 
 #creation4 {
-  grid-row: 2;
   grid-column: 2;
+  grid-row: 2;
 }
 
 
