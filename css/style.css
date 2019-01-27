@@ -20,6 +20,8 @@ html {
   font-size: 1.85vw;
   letter-spacing: 0.01vw;
   text-align: left;
+  --sidebar-width: 20vh;
+  --sidebar-padding: 5vh; 
   }
 
 
@@ -37,7 +39,7 @@ header {
   line-height: 4vh;
   padding: 5vh;
   position: fixed;
-  width: 20vh; /* same as main margin */
+  width: 20vh; /* this and padding = same as main margin*/
 }
 
 /* ### HEADER SECTIONS */
