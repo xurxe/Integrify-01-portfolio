@@ -6,6 +6,7 @@ light #AF6BE3
 medium #8844BB
 dark #622B8D 
 darkest #311845
+https://www.color-hex.com/color/8844bb
 */
 
 * {
@@ -195,26 +196,25 @@ main {
 /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + SQUARES) */
 
 .grid-skill {
-  align-items: center;
+  align-items: end;
   display: grid;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2.5fr;
   grid-template-rows: 3vw;
   justify-items: stretch;
 }
 
 .subgrid-skill {
-  align-items: center;
+  align-items: end;
   display: grid;
   grid-column-gap: 1vw;
-  grid-template-columns: 50% 45%;
+  grid-template-columns: 40% 40%;
   grid-template-rows: 3vw;
   justify-items: start;
 }
 
 .skill-type {
-  grid-column: 1;
   font-weight: 900;
   color: #622B8D;
   font-size: 1.3em;
@@ -227,38 +227,119 @@ main {
 }
 
 .skill-level {
-  grid-column:2;
-  grid-row:1 ;
-  align-self:start;
+  grid-column: 2;
+  grid-row: 1 ;
+  align-self: start;
   height: 100%
 }
 
-#skill-type1 {
+
+
+#language-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#skill1 {
+#english {
   grid-column: 2;
   grid-row: 1;
 }
 
-#skill2 {
+#spanish {
   grid-column: 2;
   grid-row: 2;
 }
 
-#skill3 {
+#galician {
   grid-column: 2;
   grid-row: 3;
 }
 
-#skill4 {
+#finnish {
   grid-column: 2;
   grid-row: 4;
 }
 
-#skill5 {
+#portuguese {
   grid-column: 2;
   grid-row: 5;
 }
+
+#html {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+#css {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+#r {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+#js {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+
+
+#stillness-skills {
+  grid-column: 1;
+  grid-row: 11;
+}
+
+#lightroom {
+  grid-column: 2;
+  grid-row: 11;
+}
+
+#indesign {
+  grid-column: 2;
+  grid-row: 12;
+}
+
+#gravit {
+  grid-column: 2;
+  grid-row: 13;
+}
+
+#photoshop {
+  grid-column: 2;
+  grid-row: 14;
+}
+
+#gimp {
+  grid-column: 2;
+  grid-row: 15;
+}
+
+
+#movement-skills {
+  grid-column: 1;
+  grid-row: 17;
+}
+
+#premiere {
+  grid-column: 2;
+  grid-row: 17;
+}
+
+#final-cut {
+  grid-column: 2;
+  grid-row: 18;
+}
+
+#after-effects {
+  grid-column: 2;
+  grid-row: 19;
+}
+
+#ar-studio {
+  grid-column: 2;
+  grid-row: 20;
+}
+
