@@ -19,10 +19,13 @@ html {
   font-family: 'Raleway', sans-serif;
   font-size: 1.85vw;
   letter-spacing: 0.01vw;
-  text-align: left;
-  --sidebar-width: 20vh;
-  --sidebar-padding: 5vh; 
+  text-align: left; 
   }
+
+.italic {
+  font-style: italic;
+  letter-spacing:1.1;
+}
 
 
 /* # HEADER */
@@ -88,7 +91,7 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 
 /* # MAIN */
 main {
-  margin-left: 30vh; /* Same as the width of the sidebar */
+  margin-left: 30vh; /* Same as the width of the sidebar + padding */
   padding: 2vw 3vw;
 }
 
@@ -195,7 +198,7 @@ main {
   align-items: center;
   display: grid;
   grid-column-gap: 2vw;
-  grid-row-gap: 1vw;
+  grid-row-gap: 2vw;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 3vw;
   justify-items: stretch;
@@ -210,14 +213,29 @@ main {
   justify-items: start;
 }
 
-.skill-name {
-  grid-row: 1;
+.skill-type {
   grid-column: 1;
+  font-weight: 900;
+  color: #622B8D;
+  font-size: 1.3em;
+  align-self: start;
+}
+
+.skill-name {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .skill-level {
-  grid-row:1 ;
   grid-column:2;
+  grid-row:1 ;
+  align-self:start;
+  height: 100%
+}
+
+#skill-type1 {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 #skill1 {
@@ -238,4 +256,9 @@ main {
 #skill4 {
   grid-column: 2;
   grid-row: 4;
+}
+
+#skill5 {
+  grid-column: 2;
+  grid-row: 5;
 }
