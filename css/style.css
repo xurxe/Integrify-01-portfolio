@@ -121,23 +121,23 @@ main {
   color: #622B8D;
 }
 
-/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) */
+/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) NOTE: I think I need to create a separate one for each portfolio page???*/
 
 .grid {
   align-items: center;
   display: grid;
   grid-column-gap: 3vw;
   grid-row-gap: 0;
-  grid-template-columns: 37vw 37vw;
-  grid-template-rows: 47vw;
+  grid-template-columns: 35vw 35vw;
+  grid-template-rows: 45vw;
   justify-items: center;
 }
 
 .subgrid {
   align-items: center;
   display: grid;
-  grid-template-columns: 37vw;
-  grid-template-rows: 37vw 10vw;
+  grid-template-columns: 35vw;
+  grid-template-rows: 35vw 10vw;
   justify-items: center;
 }
 
@@ -176,4 +176,64 @@ main {
   grid-row: 2;
 }
 
+#creation5 {
+  grid-column: 1;
+  grid-row: 3;
+}
 
+#creation6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+/* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + SQUARES) */
+
+.grid-skill {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 2vw;
+  grid-row-gap: 1vw;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3vw;
+  justify-items: stretch;
+}
+
+.subgrid-skill {
+  align-items: center;
+  display: grid;
+  grid-column-gap: 1vw;
+  grid-template-columns: 50% 45%;
+  grid-template-rows: 3vw;
+  justify-items: start;
+}
+
+.skill-name {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.skill-level {
+  grid-row:1 ;
+  grid-column:2;
+}
+
+#skill1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#skill2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#skill3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#skill4 {
+  grid-column: 2;
+  grid-row: 4;
+}
