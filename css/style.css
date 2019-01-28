@@ -18,8 +18,8 @@ https://www.color-hex.com/color/8844bb
 html {
   color: #311845;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.85vw;
-  letter-spacing: 0.01vw;
+  font-size: 1.8vmax;
+  letter-spacing: 0.01vmax;
   text-align: left; 
   }
 
@@ -93,7 +93,8 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 /* # MAIN */
 main {
   margin-left: 30vh; /* Same as the width of the sidebar + padding */
-  padding: 2vw 3vw;
+  margin-right: 5vw;
+  padding: 5vh;
 }
 
 /* ## MAIN INTRO (HELLO + PASSIONS) */
@@ -104,7 +105,7 @@ main {
 }
 
 #hello {
-  white-space: nowrap
+  max-width: 30rem;
 }
 
 .largest {
@@ -137,8 +138,8 @@ main {
   display: grid;
   grid-column-gap: 3vw;
   grid-row-gap: 0;
-  grid-template-columns: 35vw 35vw;
-  grid-template-rows: 45vw;
+  grid-template-columns: 33vmax 33vmax;
+  grid-template-rows: 43vmax;
   justify-items: center;
 }
 
@@ -146,8 +147,8 @@ main {
 .subgrid {
   align-items: center;
   display: grid;
-  grid-template-columns: 35vw;
-  grid-template-rows: 35vw 10vw;
+  grid-template-columns: 33vmax;
+  grid-template-rows: 33vmax 10vmax;
   justify-items: center;
 }
 
@@ -206,7 +207,7 @@ main {
   align-items: center;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
-  grid-template-columns: 1.1fr 2fr;
+  grid-template-columns: 30vw auto;
   grid-template-rows: 3vw;
   justify-items: stretch;
   margin-bottom: 5vw;
@@ -216,7 +217,7 @@ main {
   display: grid;
   align-items: center;
   grid-column-gap: 1vw;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 10em 50%;
   grid-template-rows: 3vw;
   justify-items: start;
 }
@@ -227,6 +228,7 @@ main {
   font-size: 1.3em;
   align-self: start;
   justify-self: stretch;
+  grid-column: 1;
 }
 
 .skill-name {
@@ -520,14 +522,14 @@ main {
 
 /* SMALL SCREEN */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   
   .grid {
     align-items: center;
     display: grid;
     grid-row-gap: 3vw;
-    grid-template-columns: 60vw;
-    grid-template-rows: 75vw;
+    grid-template-columns: 45vmax;
+    grid-template-rows: 60vmax;
     justify-items: center;
     grid-auto-flow: column;
     font-size: 1.5em;
@@ -537,8 +539,8 @@ main {
     align-items: center;
     display: grid;
     grid-row-gap: 1.5vw;
-    grid-template-columns: 60vw;
-    grid-template-rows: 60vw 15vw;
+    grid-template-columns: 45vmax;
+    grid-template-rows: 45vmax 15vmax;
     justify-items: center;
   }
 
@@ -571,5 +573,288 @@ main {
     grid-column: 1;
     grid-row: 6;
   }
+
+  .grid-skill {
+    display: grid;
+    align-items: center;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-columns: auto;
+    grid-template-rows: 3vw;
+    justify-items: stretch;
+    margin-bottom: 5vw;
+  }
+
+  #language-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #english {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #spanish {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #galician {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #finnish {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #portuguese {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #html {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  #css {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  
+  #csharp {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  
+  #r {
+    grid-column: 1;
+    grid-row: 10;
+  }
+  
+  #js {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  #binary {
+    grid-column: 1;
+    grid-row: 12;
+  }
+  
+  
+  /* IMAGE SOFTWARE SKILLS */
+  
+  #image-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #lightroom {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #indesign {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #gravit {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #photoshop {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #gimp {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  /* VIDEO SOFTWARE */
+  
+  
+  #video-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #premiere {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #final-cut {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #after-effects {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #ar-studio {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  
+  /* GAME SOFTWARE */
+  
+  #game-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #bitsy {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #twine {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #unity {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  /* CITATION SOFTWARE */
+  
+  #citation-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #zotero {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #refworks {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #endnote {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  
+  /* ART MEDIUMS */
+  
+  #art-mediums {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #digital-photography {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #watercolor {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #gouache {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #modelling-clay {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  
+  /* COLLABORATION SKILLS */
+  
+  #collaboration-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #google-drive {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #scheduling {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #coordinating {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #brainstorming {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #teamwork {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #feedback {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  
+  /* OTHER SKILLS */
+  
+  #other-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #listening {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #public-speaking {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #scientific-writing {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #popular-writing {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #empathy {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #enthusiasm {
+    grid-column: 1;
+    grid-row: 7;
+    align-self: start;
+  }
+  
 
 }
