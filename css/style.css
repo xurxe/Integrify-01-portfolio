@@ -196,18 +196,19 @@ main {
 /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + SQUARES) */
 
 .grid-skill {
-  align-items: end;
   display: grid;
+  align-items: end;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
-  grid-template-columns: 1fr 2.5fr;
+  grid-template-columns: 1.1fr 2fr;
   grid-template-rows: 3vw;
   justify-items: stretch;
+  margin-bottom: 5vw;
 }
 
 .subgrid-skill {
-  align-items: end;
   display: grid;
+  align-items: end;
   grid-column-gap: 1vw;
   grid-template-columns: 40% 40%;
   grid-template-rows: 3vw;
@@ -218,7 +219,8 @@ main {
   font-weight: 900;
   color: #622B8D;
   font-size: 1.3em;
-  align-self: start;
+  align-self: center;
+  justify-self: stretch;
 }
 
 .skill-name {
@@ -234,6 +236,8 @@ main {
 }
 
 
+
+/* LANGUAGE SKILLS */
 
 #language-skills {
   grid-column: 1;
@@ -275,71 +279,233 @@ main {
   grid-row: 7;
 }
 
-#r {
+#csharp {
   grid-column: 2;
   grid-row: 8;
 }
 
-#js {
+#r {
   grid-column: 2;
   grid-row: 9;
 }
 
+#js {
+  grid-column: 2;
+  grid-row: 10;
+}
 
-
-#stillness-skills {
-  grid-column: 1;
+#binary {
+  grid-column: 2;
   grid-row: 11;
+}
+
+
+/* IMAGE SOFTWARE SKILLS */
+
+#image-software {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 #lightroom {
   grid-column: 2;
-  grid-row: 11;
+  grid-row: 1;
 }
 
 #indesign {
   grid-column: 2;
-  grid-row: 12;
+  grid-row: 2;
 }
 
 #gravit {
   grid-column: 2;
-  grid-row: 13;
+  grid-row: 3;
 }
 
 #photoshop {
   grid-column: 2;
-  grid-row: 14;
+  grid-row: 4;
 }
 
 #gimp {
   grid-column: 2;
-  grid-row: 15;
+  grid-row: 5;
 }
 
+/* VIDEO SOFTWARE */
 
-#movement-skills {
+
+#video-software {
   grid-column: 1;
-  grid-row: 17;
+  grid-row: 1;
 }
 
 #premiere {
   grid-column: 2;
-  grid-row: 17;
+  grid-row: 1;
 }
 
 #final-cut {
   grid-column: 2;
-  grid-row: 18;
+  grid-row: 2;
 }
 
 #after-effects {
   grid-column: 2;
-  grid-row: 19;
+  grid-row: 3;
 }
 
 #ar-studio {
   grid-column: 2;
-  grid-row: 20;
+  grid-row: 4;
 }
 
+
+/* GAME SOFTWARE */
+
+#game-software {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#bitsy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#twine {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#unity {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* CITATION SOFTWARE */
+
+#citation-software {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#zotero {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#refworks {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#endnote {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+
+/* ART MEDIUMS */
+
+#art-mediums {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#digital-photography {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#watercolor {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#gouache {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#modelling-clay {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+
+/* COLLABORATION SKILLS */
+
+#collaboration-skills {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#google-drive {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#scheduling {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#coordinating {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#brainstorming {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#teamwork {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+#feedback {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+
+/* OTHER SKILLS */
+
+#other-skills {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#listening {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#public-speaking {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#scientific-writing {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#popular-writing {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#empathy {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+#excitement {
+  grid-column: 2;
+  grid-row: 6;
+  align-self: start;
+}
