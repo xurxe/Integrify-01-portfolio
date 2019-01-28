@@ -197,7 +197,7 @@ main {
 
 .grid-skill {
   display: grid;
-  align-items: end;
+  align-items: center;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
   grid-template-columns: 1.1fr 2fr;
@@ -208,7 +208,7 @@ main {
 
 .subgrid-skill {
   display: grid;
-  align-items: end;
+  align-items: center;
   grid-column-gap: 1vw;
   grid-template-columns: 40% 40%;
   grid-template-rows: 3vw;
@@ -219,19 +219,20 @@ main {
   font-weight: 900;
   color: #622B8D;
   font-size: 1.3em;
-  align-self: center;
+  align-self: start;
   justify-self: stretch;
 }
 
 .skill-name {
   grid-column: 1;
   grid-row: 1;
+  align-self: center;
 }
 
 .skill-level {
   grid-column: 2;
   grid-row: 1 ;
-  align-self: start;
+  align-self: center;
   height: 100%
 }
 
