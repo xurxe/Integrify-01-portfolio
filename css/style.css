@@ -1,13 +1,10 @@
 @charset "UFT-8";
 
 /* COLOR SCHEME
-lightest #D5A3FB
-light #AF6BE3
-medium #8844BB
-dark #622B8D 
-darkest #311845
 https://www.color-hex.com/color/8844bb
 */
+
+/* # GENERAL */
 
 * {
   margin: 0;
@@ -17,36 +14,39 @@ https://www.color-hex.com/color/8844bb
 
 html {
   color: #311845;
-  font-family: 'Raleway', sans-serif;
-  font-size: 2vmax;
-  letter-spacing: 0.01vmax;
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 200;
+  font-size: 2.2vmax;
+  letter-spacing: 0.05vmax;
   text-align: left; 
   }
 
 h1 {
-  color: #622B8D;
-  font-size: 2rem;
-  font-weight: 600;
+  color: #8844bb;
+  font-size: 1.728rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 2.3rem;
   padding-bottom: 1rem;
 }
 
 h2, .larger {
-  font-size: 1.5rem;
-  color: #622B8D;
+  font-size: 1.44rem;
+  font-weight: 700;
+  color: #6c3695;
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   padding-bottom: 0.3em;
+  color: #512870;
 }
 
 .italic {
   font-style: italic;
-  letter-spacing:1.1;
+  letter-spacing: 1.2;
 }
 
 
@@ -111,6 +111,9 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
   padding-bottom: 10vh;
 }
 
+
+
+
 /* # MAIN */
 main {
   margin-left: 30vh; /* Same as the width of the sidebar + padding */
@@ -126,9 +129,8 @@ main {
   margin-bottom: 5vw;
 }
 
-
 .hello {
-  max-width: 15em;
+  max-width: 14.5em;
 }
 
 .passions p {
@@ -140,7 +142,7 @@ main {
 /* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) NOTE: I think I need to create a separate one for each portfolio page???*/
 
 .grid {
-  align-items: center;
+  align-items: end;
   display: grid;
   grid-column-gap: 3vw;
   grid-row-gap: 0;
@@ -148,7 +150,6 @@ main {
   grid-template-rows: 43vmax;
   justify-items: center;
 }
-
 
 .subgrid {
   align-items: center;
@@ -173,40 +174,34 @@ main {
   padding-top: 0.5rem;
 }
 
-#creation1 {
-  grid-column: 1;
-  grid-row: 1;
+.creation1 {
+  grid-column: 1; grid-row: 1;
 }
 
-#creation2 {
-  grid-column: 2;
-  grid-row: 1;
+.creation2 {
+  grid-column: 2; grid-row: 1;
 }
 
-#creation3 {
-  grid-column: 1;
-  grid-row: 2;
+.creation3 {
+  grid-column: 1; grid-row: 2;
 }
 
-#creation4 {
-  grid-column: 2;
-  grid-row: 2;
+.creation4 {
+  grid-column: 2; grid-row: 2;
 }
 
-#creation5 {
-  grid-column: 1;
-  grid-row: 3;
+.creation5 {
+  grid-column: 1; grid-row: 3;
 }
 
-#creation6 {
-  grid-column: 2;
-  grid-row: 3;
+.creation6 {
+  grid-column: 2; grid-row: 3;
 }
 
 
 
 
-/* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + SQUARES) */
+/* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
 
 .grid-skill {
   display: grid;
@@ -217,11 +212,11 @@ main {
   grid-template-rows: 3vw;
   justify-items: stretch;
   margin-bottom: 5vw;
+  align-items: end;
 }
 
 .subgrid-skill {
   display: grid;
-  align-items: center;
   grid-column-gap: 1vw;
   grid-template-columns: 10em 50%;
   grid-template-rows: 3vw;
@@ -231,8 +226,6 @@ main {
 .skill-type {
   font-weight: 900;
   color: #622B8D;
-  font-size: 1.3em;
-  align-self: start;
   justify-self: stretch;
   grid-column: 1;
 }
@@ -240,220 +233,183 @@ main {
 .skill-name {
   grid-column: 1;
   grid-row: 1;
-  align-self: center;
 }
 
 .skill-level {
   grid-column: 2;
   grid-row: 1 ;
-  align-self: center;
   height: 100%
 }
 
 
 
-/* LANGUAGE SKILLS */
+/* ### LANGUAGE SKILLS */
 
 .language-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .english {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .spanish {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .galician {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .finnish {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 .portuguese {
-  grid-column: 2;
-  grid-row: 5;
+  grid-column: 2; grid-row: 5;
 }
 
 .html {
-  grid-column: 2;
-  grid-row: 6;
+  grid-column: 2; grid-row: 6;
 }
 
 .css {
-  grid-column: 2;
-  grid-row: 7;
+  grid-column: 2; grid-row: 7;
 }
 
 .csharp {
-  grid-column: 2;
-  grid-row: 8;
+  grid-column: 2; grid-row: 8;
 }
 
 .r {
-  grid-column: 2;
-  grid-row: 9;
+  grid-column: 2; grid-row: 9;
 }
 
 .javascript {
-  grid-column: 2;
-  grid-row: 10;
+  grid-column: 2; grid-row: 10;
 }
 
 .binary {
-  grid-column: 2;
-  grid-row: 11;
+  grid-column: 2; grid-row: 11;
 }
 
 
-/* IMAGE SOFTWARE SKILLS */
+/* ### IMAGE SKILLS */
 
 .image-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .lightroom {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .indesign {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .gravit {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .photoshop {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 .gimp {
-  grid-column: 2;
-  grid-row: 5;
+  grid-column: 2; grid-row: 5;
 }
 
-/* VIDEO SOFTWARE */
+/* ### VIDEO SKILLS */
 
 
 .video-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .premiere {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .final-cut {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .after-effects {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .ar-studio {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 
-/* GAME SOFTWARE */
+/* ### GAME SKILLS */
 
 .game-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .bitsy {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .twine {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .unity {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
-/* CITATION SOFTWARE */
+
+
+/* ### CITATION SKILLS */
 
 .citation-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .zotero {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .refworks {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .endnote {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 
-/* ART MEDIUMS */
+/* ### ART SKILLS */
 
-#art-skills {
-  grid-column: 1;
-  grid-row: 1;
+.art-skills {
+  grid-column: 1; grid-row: 1;
 }
 
 .digital-photography {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .watercolor {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .gouache {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .modelling-clay {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 
 /* COLLABORATION SKILLS */
 
 .collaboration-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .google-drive {
@@ -555,32 +511,32 @@ main {
     justify-items: center;
   }
 
-  #creation1 {
+  .creation1 {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #creation2 {
+  .creation2 {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #creation3 {
+  .creation3 {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #creation4 {
+  .creation4 {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #creation5 {
+  .creation5 {
     grid-column: 1;
     grid-row: 5;
   }
   
-  #creation6 {
+  .creation6 {
     grid-column: 1;
     grid-row: 6;
   }
@@ -879,4 +835,5 @@ main {
 
 .about p {
   padding-bottom: 1.8em;
+  padding-left: 1.5em;
 }
