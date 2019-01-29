@@ -23,6 +23,21 @@ html {
   text-align: left; 
   }
 
+h1 {
+  color: #622B8D;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+h2, .larger {
+  font-size: 1.5rem;
+  color: #622B8D;
+  padding-bottom: 0.6rem;
+}
+
 .italic {
   font-style: italic;
   letter-spacing:1.1;
@@ -59,34 +74,34 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
   color: #ffeeaa;
 }
 
-#logo {
+.logo {
   padding-bottom: 3vh;
   width: 100%;
 } 
 
-#name-home { /* MAYBE: integrate with logo */
+.name-home { /* MAYBE: integrate with logo */
   font-family: 'Ubuntu Mono', monospace;
   padding-bottom: 5vh;
 }
 
-#first-name {
+.first-name {
   font-size: 200%;
   letter-spacing: 0.25em;
   line-height: 1.1em;
   text-transform: uppercase;
 }
 
-#last-name {
+.last-name {
   font-size: 130%;
   letter-spacing: 0.45em;
   text-transform: lowercase;
 }
 
-#portfolio, #personal {
+.portfolio, .personal {
   padding-bottom: 5vh;
 }
 
-#social-media {
+.social-media {
   padding-bottom: 10vh;
 }
 
@@ -102,34 +117,19 @@ main {
 .intro {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vw;
 }
 
-#hello {
-  max-width: 30rem;
+
+.hello {
+  max-width: 15em;
 }
 
-.largest {
-  color: #622B8D;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  line-height: 2.3rem;
-  padding-top: 0rem;
-  padding-bottom: 1rem;
+.passions p {
+  padding-bottom: 0.4em;
 }
 
-.large {
-  padding-bottom: 3rem;
-}
 
-.large p {
-  padding-bottom: 0.6vw;
-}
-
-.larger {
-  font-size: 1.5rem;
-  color: #622B8D;
-}
 
 /* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) NOTE: I think I need to create a separate one for each portfolio page???*/
 
@@ -248,62 +248,62 @@ main {
 
 /* LANGUAGE SKILLS */
 
-#language-skills {
+.language-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#english {
+.english {
   grid-column: 2;
   grid-row: 1;
 }
 
-#spanish {
+.spanish {
   grid-column: 2;
   grid-row: 2;
 }
 
-#galician {
+.galician {
   grid-column: 2;
   grid-row: 3;
 }
 
-#finnish {
+.finnish {
   grid-column: 2;
   grid-row: 4;
 }
 
-#portuguese {
+.portuguese {
   grid-column: 2;
   grid-row: 5;
 }
 
-#html {
+.html {
   grid-column: 2;
   grid-row: 6;
 }
 
-#css {
+.css {
   grid-column: 2;
   grid-row: 7;
 }
 
-#csharp {
+.csharp {
   grid-column: 2;
   grid-row: 8;
 }
 
-#r {
+.r {
   grid-column: 2;
   grid-row: 9;
 }
 
-#js {
+.javascript {
   grid-column: 2;
   grid-row: 10;
 }
 
-#binary {
+.binary {
   grid-column: 2;
   grid-row: 11;
 }
@@ -311,32 +311,32 @@ main {
 
 /* IMAGE SOFTWARE SKILLS */
 
-#image-software {
+.image-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#lightroom {
+.lightroom {
   grid-column: 2;
   grid-row: 1;
 }
 
-#indesign {
+.indesign {
   grid-column: 2;
   grid-row: 2;
 }
 
-#gravit {
+.gravit {
   grid-column: 2;
   grid-row: 3;
 }
 
-#photoshop {
+.photoshop {
   grid-column: 2;
   grid-row: 4;
 }
 
-#gimp {
+.gimp {
   grid-column: 2;
   grid-row: 5;
 }
@@ -344,27 +344,27 @@ main {
 /* VIDEO SOFTWARE */
 
 
-#video-software {
+.video-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#premiere {
+.premiere {
   grid-column: 2;
   grid-row: 1;
 }
 
-#final-cut {
+.final-cut {
   grid-column: 2;
   grid-row: 2;
 }
 
-#after-effects {
+.after-effects {
   grid-column: 2;
   grid-row: 3;
 }
 
-#ar-studio {
+.ar-studio {
   grid-column: 2;
   grid-row: 4;
 }
@@ -372,44 +372,44 @@ main {
 
 /* GAME SOFTWARE */
 
-#game-software {
+.game-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#bitsy {
+.bitsy {
   grid-column: 2;
   grid-row: 1;
 }
 
-#twine {
+.twine {
   grid-column: 2;
   grid-row: 2;
 }
 
-#unity {
+.unity {
   grid-column: 2;
   grid-row: 3;
 }
 
 /* CITATION SOFTWARE */
 
-#citation-software {
+.citation-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#zotero {
+.zotero {
   grid-column: 2;
   grid-row: 1;
 }
 
-#refworks {
+.refworks {
   grid-column: 2;
   grid-row: 2;
 }
 
-#endnote {
+.endnote {
   grid-column: 2;
   grid-row: 3;
 }
@@ -417,27 +417,27 @@ main {
 
 /* ART MEDIUMS */
 
-#art-mediums {
+#art-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#digital-photography {
+.digital-photography {
   grid-column: 2;
   grid-row: 1;
 }
 
-#watercolor {
+.watercolor {
   grid-column: 2;
   grid-row: 2;
 }
 
-#gouache {
+.gouache {
   grid-column: 2;
   grid-row: 3;
 }
 
-#modelling-clay {
+.modelling-clay {
   grid-column: 2;
   grid-row: 4;
 }
@@ -445,37 +445,37 @@ main {
 
 /* COLLABORATION SKILLS */
 
-#collaboration-skills {
+.collaboration-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#google-drive {
+.google-drive {
   grid-column: 2;
   grid-row: 1;
 }
 
-#scheduling {
+.scheduling {
   grid-column: 2;
   grid-row: 2;
 }
 
-#coordinating {
+.coordinating {
   grid-column: 2;
   grid-row: 3;
 }
 
-#brainstorming {
+.brainstorming {
   grid-column: 2;
   grid-row: 4;
 }
 
-#teamwork {
+.teamwork {
   grid-column: 2;
   grid-row: 5;
 }
 
-#feedback {
+.feedback {
   grid-column: 2;
   grid-row: 6;
 }
@@ -483,37 +483,37 @@ main {
 
 /* OTHER SKILLS */
 
-#other-skills {
+.other-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#listening {
+.listening {
   grid-column: 2;
   grid-row: 1;
 }
 
-#public-speaking {
+.public-speaking {
   grid-column: 2;
   grid-row: 2;
 }
 
-#scientific-writing {
+.scientific-writing {
   grid-column: 2;
   grid-row: 3;
 }
 
-#popular-writing {
+.popular-writing {
   grid-column: 2;
   grid-row: 4;
 }
 
-#empathy {
+.empathy {
   grid-column: 2;
   grid-row: 5;
 }
 
-#enthusiasm {
+.enthusiasm {
   grid-column: 2;
   grid-row: 6;
   align-self: start;
@@ -856,5 +856,4 @@ main {
     align-self: start;
   }
   
-
 }
