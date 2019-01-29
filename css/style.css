@@ -35,7 +35,13 @@ h1 {
 h2, .larger {
   font-size: 1.5rem;
   color: #622B8D;
-  padding-bottom: 0.6rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  padding-bottom: 0.3em;
 }
 
 .italic {
@@ -488,7 +494,7 @@ main {
   grid-row: 1;
 }
 
-.listening {
+.active-listening {
   grid-column: 2;
   grid-row: 1;
 }
@@ -498,24 +504,29 @@ main {
   grid-row: 2;
 }
 
-.scientific-writing {
+.research {
   grid-column: 2;
   grid-row: 3;
 }
 
-.popular-writing {
+.scientific-writing {
   grid-column: 2;
   grid-row: 4;
 }
 
-.empathy {
+.popular-writing {
   grid-column: 2;
   grid-row: 5;
 }
 
-.enthusiasm {
+.empathy {
   grid-column: 2;
   grid-row: 6;
+}
+
+.enthusiasm {
+  grid-column: 2;
+  grid-row: 7;
   align-self: start;
 }
 
@@ -585,62 +596,62 @@ main {
     margin-bottom: 5vw;
   }
 
-  #language-skills {
+  .language-skills {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #english {
+  .english {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #spanish {
+  .spanish {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #galician {
+  .galician {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #finnish {
+  .finnish {
     grid-column: 1;
     grid-row: 5;
   }
   
-  #portuguese {
+  .portuguese {
     grid-column: 1;
     grid-row: 6;
   }
   
-  #html {
+  .html {
     grid-column: 1;
     grid-row: 7;
   }
   
-  #css {
+  .css {
     grid-column: 1;
     grid-row: 8;
   }
   
-  #csharp {
+  .csharp {
     grid-column: 1;
     grid-row: 9;
   }
   
-  #r {
+  .r {
     grid-column: 1;
     grid-row: 10;
   }
   
-  #js {
+  .js {
     grid-column: 1;
     grid-row: 11;
   }
   
-  #binary {
+  .binary {
     grid-column: 1;
     grid-row: 12;
   }
@@ -648,32 +659,32 @@ main {
   
   /* IMAGE SOFTWARE SKILLS */
   
-  #image-software {
+  .image-software {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #lightroom {
+  .lightroom {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #indesign {
+  .indesign {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #gravit {
+  .gravit {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #photoshop {
+  .photoshop {
     grid-column: 1;
     grid-row: 5;
   }
   
-  #gimp {
+  .gimp {
     grid-column: 1;
     grid-row: 6;
   }
@@ -681,27 +692,27 @@ main {
   /* VIDEO SOFTWARE */
   
   
-  #video-software {
+  .video-software {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #premiere {
+  .premiere {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #final-cut {
+  .final-cut {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #after-effects {
+  .after-effects {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #ar-studio {
+  .ar-studio {
     grid-column: 1;
     grid-row: 5;
   }
@@ -709,44 +720,44 @@ main {
   
   /* GAME SOFTWARE */
   
-  #game-software {
+  .game-software {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #bitsy {
+  .bitsy {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #twine {
+  .twine {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #unity {
+  .unity {
     grid-column: 1;
     grid-row: 4;
   }
   
   /* CITATION SOFTWARE */
   
-  #citation-software {
+  .citation-software {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #zotero {
+  .zotero {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #refworks {
+  .refworks {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #endnote {
+  .endnote {
     grid-column: 1;
     grid-row: 4;
   }
@@ -754,27 +765,27 @@ main {
   
   /* ART MEDIUMS */
   
-  #art-mediums {
+  .art-mediums {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #digital-photography {
+  .digital-photography {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #watercolor {
+  .watercolor {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #gouache {
+  .gouache {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #modelling-clay {
+  .modelling-clay {
     grid-column: 1;
     grid-row: 5;
   }
@@ -782,37 +793,37 @@ main {
   
   /* COLLABORATION SKILLS */
   
-  #collaboration-skills {
+  .collaboration-skills {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #google-drive {
+  .google-drive {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #scheduling {
+  .scheduling {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #coordinating {
+  .coordinating {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #brainstorming {
+  .brainstorming {
     grid-column: 1;
     grid-row: 5;
   }
   
-  #teamwork {
+  .teamwork {
     grid-column: 1;
     grid-row: 6;
   }
   
-  #feedback {
+  .feedback {
     grid-column: 1;
     grid-row: 7;
   }
@@ -820,40 +831,52 @@ main {
   
   /* OTHER SKILLS */
   
-  #other-skills {
+  .other-skills {
     grid-column: 1;
     grid-row: 1;
   }
   
-  #listening {
+  .listening {
     grid-column: 1;
     grid-row: 2;
   }
   
-  #public-speaking {
+  .public-speaking {
     grid-column: 1;
     grid-row: 3;
   }
   
-  #scientific-writing {
+  .scientific-writing {
     grid-column: 1;
     grid-row: 4;
   }
   
-  #popular-writing {
+  .popular-writing {
     grid-column: 1;
     grid-row: 5;
   }
   
-  #empathy {
+  .empathy {
     grid-column: 1;
     grid-row: 6;
   }
   
-  #enthusiasm {
+  .enthusiasm {
     grid-column: 1;
     grid-row: 7;
     align-self: start;
   }
   
+}
+
+.about h2 {
+  padding-bottom: 1em;
+}
+
+.about h3 {
+  padding-bottom: 0.2em;
+}
+
+.about p {
+  padding-bottom: 1.8em;
 }
