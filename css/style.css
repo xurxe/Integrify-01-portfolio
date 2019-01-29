@@ -18,10 +18,25 @@ https://www.color-hex.com/color/8844bb
 html {
   color: #311845;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.85vw;
-  letter-spacing: 0.01vw;
+  font-size: 1.8vmax;
+  letter-spacing: 0.01vmax;
   text-align: left; 
   }
+
+h1 {
+  color: #622B8D;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  line-height: 2.3rem;
+  padding-bottom: 1rem;
+}
+
+h2, .larger {
+  font-size: 1.5rem;
+  color: #622B8D;
+  padding-bottom: 0.6rem;
+}
 
 .italic {
   font-style: italic;
@@ -59,41 +74,42 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
   color: #ffeeaa;
 }
 
-#logo {
+.logo {
   padding-bottom: 3vh;
   width: 100%;
 } 
 
-#name-home { /* MAYBE: integrate with logo */
+.name-home { /* MAYBE: integrate with logo */
   font-family: 'Ubuntu Mono', monospace;
   padding-bottom: 5vh;
 }
 
-#first-name {
+.first-name {
   font-size: 200%;
   letter-spacing: 0.25em;
   line-height: 1.1em;
   text-transform: uppercase;
 }
 
-#last-name {
+.last-name {
   font-size: 130%;
   letter-spacing: 0.45em;
   text-transform: lowercase;
 }
 
-#portfolio, #personal {
+.portfolio, .personal {
   padding-bottom: 5vh;
 }
 
-#social-media {
+.social-media {
   padding-bottom: 10vh;
 }
 
 /* # MAIN */
 main {
   margin-left: 30vh; /* Same as the width of the sidebar + padding */
-  padding: 2vw 3vw;
+  margin-right: 5vw;
+  padding: 5vh;
 }
 
 /* ## MAIN INTRO (HELLO + PASSIONS) */
@@ -101,34 +117,18 @@ main {
 .intro {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5vw;
 }
 
-#hello {
-  white-space: nowrap
+.hello {
+  max-width: 15em;
 }
 
-.largest {
-  color: #622B8D;
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  line-height: 2.3rem;
-  padding-top: 0rem;
-  padding-bottom: 1rem;
+.passions p {
+  padding-bottom: 0.4em;
 }
 
-.large {
-  padding-bottom: 3rem;
-}
 
-.large p {
-  padding-bottom: 0.6vw;
-}
-
-.larger {
-  font-size: 1.5rem;
-  color: #622B8D;
-}
 
 /* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) NOTE: I think I need to create a separate one for each portfolio page???*/
 
@@ -137,8 +137,8 @@ main {
   display: grid;
   grid-column-gap: 3vw;
   grid-row-gap: 0;
-  grid-template-columns: 35vw 35vw;
-  grid-template-rows: 45vw;
+  grid-template-columns: 33vmax 33vmax;
+  grid-template-rows: 43vmax;
   justify-items: center;
 }
 
@@ -146,8 +146,8 @@ main {
 .subgrid {
   align-items: center;
   display: grid;
-  grid-template-columns: 35vw;
-  grid-template-rows: 35vw 10vw;
+  grid-template-columns: 33vmax;
+  grid-template-rows: 33vmax 10vmax;
   justify-items: center;
 }
 
@@ -206,7 +206,7 @@ main {
   align-items: center;
   grid-column-gap: 2vw;
   grid-row-gap: 2vw;
-  grid-template-columns: 1.1fr 2fr;
+  grid-template-columns: 30vw auto;
   grid-template-rows: 3vw;
   justify-items: stretch;
   margin-bottom: 5vw;
@@ -216,7 +216,7 @@ main {
   display: grid;
   align-items: center;
   grid-column-gap: 1vw;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: 10em 50%;
   grid-template-rows: 3vw;
   justify-items: start;
 }
@@ -227,6 +227,7 @@ main {
   font-size: 1.3em;
   align-self: start;
   justify-self: stretch;
+  grid-column: 1;
 }
 
 .skill-name {
@@ -246,62 +247,62 @@ main {
 
 /* LANGUAGE SKILLS */
 
-#language-skills {
+.language-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#english {
+.english {
   grid-column: 2;
   grid-row: 1;
 }
 
-#spanish {
+.spanish {
   grid-column: 2;
   grid-row: 2;
 }
 
-#galician {
+.galician {
   grid-column: 2;
   grid-row: 3;
 }
 
-#finnish {
+.finnish {
   grid-column: 2;
   grid-row: 4;
 }
 
-#portuguese {
+.portuguese {
   grid-column: 2;
   grid-row: 5;
 }
 
-#html {
+.html {
   grid-column: 2;
   grid-row: 6;
 }
 
-#css {
+.css {
   grid-column: 2;
   grid-row: 7;
 }
 
-#csharp {
+.csharp {
   grid-column: 2;
   grid-row: 8;
 }
 
-#r {
+.r {
   grid-column: 2;
   grid-row: 9;
 }
 
-#js {
+.javascript {
   grid-column: 2;
   grid-row: 10;
 }
 
-#binary {
+.binary {
   grid-column: 2;
   grid-row: 11;
 }
@@ -309,32 +310,32 @@ main {
 
 /* IMAGE SOFTWARE SKILLS */
 
-#image-software {
+.image-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#lightroom {
+.lightroom {
   grid-column: 2;
   grid-row: 1;
 }
 
-#indesign {
+.indesign {
   grid-column: 2;
   grid-row: 2;
 }
 
-#gravit {
+.gravit {
   grid-column: 2;
   grid-row: 3;
 }
 
-#photoshop {
+.photoshop {
   grid-column: 2;
   grid-row: 4;
 }
 
-#gimp {
+.gimp {
   grid-column: 2;
   grid-row: 5;
 }
@@ -342,27 +343,27 @@ main {
 /* VIDEO SOFTWARE */
 
 
-#video-software {
+.video-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#premiere {
+.premiere {
   grid-column: 2;
   grid-row: 1;
 }
 
-#final-cut {
+.final-cut {
   grid-column: 2;
   grid-row: 2;
 }
 
-#after-effects {
+.after-effects {
   grid-column: 2;
   grid-row: 3;
 }
 
-#ar-studio {
+.ar-studio {
   grid-column: 2;
   grid-row: 4;
 }
@@ -370,44 +371,44 @@ main {
 
 /* GAME SOFTWARE */
 
-#game-software {
+.game-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#bitsy {
+.bitsy {
   grid-column: 2;
   grid-row: 1;
 }
 
-#twine {
+.twine {
   grid-column: 2;
   grid-row: 2;
 }
 
-#unity {
+.unity {
   grid-column: 2;
   grid-row: 3;
 }
 
 /* CITATION SOFTWARE */
 
-#citation-software {
+.citation-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#zotero {
+.zotero {
   grid-column: 2;
   grid-row: 1;
 }
 
-#refworks {
+.refworks {
   grid-column: 2;
   grid-row: 2;
 }
 
-#endnote {
+.endnote {
   grid-column: 2;
   grid-row: 3;
 }
@@ -415,27 +416,27 @@ main {
 
 /* ART MEDIUMS */
 
-#art-mediums {
+#art-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#digital-photography {
+.digital-photography {
   grid-column: 2;
   grid-row: 1;
 }
 
-#watercolor {
+.watercolor {
   grid-column: 2;
   grid-row: 2;
 }
 
-#gouache {
+.gouache {
   grid-column: 2;
   grid-row: 3;
 }
 
-#modelling-clay {
+.modelling-clay {
   grid-column: 2;
   grid-row: 4;
 }
@@ -443,37 +444,37 @@ main {
 
 /* COLLABORATION SKILLS */
 
-#collaboration-skills {
+.collaboration-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#google-drive {
+.google-drive {
   grid-column: 2;
   grid-row: 1;
 }
 
-#scheduling {
+.scheduling {
   grid-column: 2;
   grid-row: 2;
 }
 
-#coordinating {
+.coordinating {
   grid-column: 2;
   grid-row: 3;
 }
 
-#brainstorming {
+.brainstorming {
   grid-column: 2;
   grid-row: 4;
 }
 
-#teamwork {
+.teamwork {
   grid-column: 2;
   grid-row: 5;
 }
 
-#feedback {
+.feedback {
   grid-column: 2;
   grid-row: 6;
 }
@@ -481,37 +482,37 @@ main {
 
 /* OTHER SKILLS */
 
-#other-skills {
+.other-skills {
   grid-column: 1;
   grid-row: 1;
 }
 
-#listening {
+.listening {
   grid-column: 2;
   grid-row: 1;
 }
 
-#public-speaking {
+.public-speaking {
   grid-column: 2;
   grid-row: 2;
 }
 
-#scientific-writing {
+.scientific-writing {
   grid-column: 2;
   grid-row: 3;
 }
 
-#popular-writing {
+.popular-writing {
   grid-column: 2;
   grid-row: 4;
 }
 
-#empathy {
+.empathy {
   grid-column: 2;
   grid-row: 5;
 }
 
-#enthusiasm {
+.enthusiasm {
   grid-column: 2;
   grid-row: 6;
   align-self: start;
@@ -520,14 +521,14 @@ main {
 
 /* SMALL SCREEN */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
   
   .grid {
     align-items: center;
     display: grid;
     grid-row-gap: 3vw;
-    grid-template-columns: 60vw;
-    grid-template-rows: 75vw;
+    grid-template-columns: 45vmax;
+    grid-template-rows: 60vmax;
     justify-items: center;
     grid-auto-flow: column;
     font-size: 1.5em;
@@ -537,8 +538,8 @@ main {
     align-items: center;
     display: grid;
     grid-row-gap: 1.5vw;
-    grid-template-columns: 60vw;
-    grid-template-rows: 60vw 15vw;
+    grid-template-columns: 45vmax;
+    grid-template-rows: 45vmax 15vmax;
     justify-items: center;
   }
 
@@ -572,4 +573,286 @@ main {
     grid-row: 6;
   }
 
+  .grid-skill {
+    display: grid;
+    align-items: center;
+    grid-column-gap: 2vw;
+    grid-row-gap: 2vw;
+    grid-template-columns: auto;
+    grid-template-rows: 3vw;
+    justify-items: stretch;
+    margin-bottom: 5vw;
+  }
+
+  #language-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #english {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #spanish {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #galician {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #finnish {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #portuguese {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #html {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  #css {
+    grid-column: 1;
+    grid-row: 8;
+  }
+  
+  #csharp {
+    grid-column: 1;
+    grid-row: 9;
+  }
+  
+  #r {
+    grid-column: 1;
+    grid-row: 10;
+  }
+  
+  #js {
+    grid-column: 1;
+    grid-row: 11;
+  }
+  
+  #binary {
+    grid-column: 1;
+    grid-row: 12;
+  }
+  
+  
+  /* IMAGE SOFTWARE SKILLS */
+  
+  #image-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #lightroom {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #indesign {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #gravit {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #photoshop {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #gimp {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  /* VIDEO SOFTWARE */
+  
+  
+  #video-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #premiere {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #final-cut {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #after-effects {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #ar-studio {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  
+  /* GAME SOFTWARE */
+  
+  #game-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #bitsy {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #twine {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #unity {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  /* CITATION SOFTWARE */
+  
+  #citation-software {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #zotero {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #refworks {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #endnote {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  
+  /* ART MEDIUMS */
+  
+  #art-mediums {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #digital-photography {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #watercolor {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #gouache {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #modelling-clay {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  
+  /* COLLABORATION SKILLS */
+  
+  #collaboration-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #google-drive {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #scheduling {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #coordinating {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #brainstorming {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #teamwork {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #feedback {
+    grid-column: 1;
+    grid-row: 7;
+  }
+  
+  
+  /* OTHER SKILLS */
+  
+  #other-skills {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #listening {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #public-speaking {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  
+  #scientific-writing {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  
+  #popular-writing {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  
+  #empathy {
+    grid-column: 1;
+    grid-row: 6;
+  }
+  
+  #enthusiasm {
+    grid-column: 1;
+    grid-row: 7;
+    align-self: start;
+  }
+  
 }
