@@ -16,7 +16,7 @@ html {
   color: #311845;
   font-family: 'Sarabun', sans-serif;
   font-weight: 200;
-  font-size: 2.2vmax;
+  font-size: 2vmax;
   letter-spacing: 0.05vmax;
   text-align: left; 
   }
@@ -139,24 +139,26 @@ main {
 
 
 
-/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) NOTE: I think I need to create a separate one for each portfolio page???*/
+/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND)*/
 
 .grid {
-  align-items: end;
+  align-items: start;
   display: grid;
-  grid-column-gap: 3vw;
-  grid-row-gap: 0;
-  grid-template-columns: 33vmax 33vmax;
-  grid-template-rows: 43vmax;
+  grid-column-gap: 1vmax;
+  grid-row-gap: 1vmax;
+  grid-template-columns: 24vmax 24vmax 24vmax;
+  grid-template-rows: 33vmax;
   justify-items: center;
+  grid-auto-flow: row;
 }
 
 .subgrid {
-  align-items: center;
+  align-items: start;
   display: grid;
-  grid-template-columns: 33vmax;
-  grid-template-rows: 33vmax 10vmax;
+  grid-template-columns: 24vmax;
+  grid-template-rows: 24vmax 8vmax;
   justify-items: center;
+  grid-row-gap: 1vmax;
 }
 
 .thumbnail {
@@ -171,33 +173,7 @@ main {
   justify-self: start;
   grid-row:2;
   grid-column:1;
-  padding-top: 0.5rem;
 }
-
-.creation1 {
-  grid-column: 1; grid-row: 1;
-}
-
-.creation2 {
-  grid-column: 2; grid-row: 1;
-}
-
-.creation3 {
-  grid-column: 1; grid-row: 2;
-}
-
-.creation4 {
-  grid-column: 2; grid-row: 2;
-}
-
-.creation5 {
-  grid-column: 1; grid-row: 3;
-}
-
-.creation6 {
-  grid-column: 2; grid-row: 3;
-}
-
 
 
 
@@ -221,6 +197,7 @@ main {
   grid-template-columns: 10em 50%;
   grid-template-rows: 3vw;
   justify-items: start;
+  grid-auto-flow: column;
 }
 
 .skill-type {
@@ -240,7 +217,6 @@ main {
   grid-row: 1 ;
   height: 100%
 }
-
 
 
 /* ### LANGUAGE SKILLS */
@@ -413,133 +389,146 @@ main {
 }
 
 .google-drive {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .scheduling {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .coordinating {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .brainstorming {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 .teamwork {
-  grid-column: 2;
-  grid-row: 5;
+  grid-column: 2; grid-row: 5;
 }
 
 .feedback {
-  grid-column: 2;
-  grid-row: 6;
+  grid-column: 2; grid-row: 6;
 }
 
 
-/* OTHER SKILLS */
+/* ### OTHER SKILLS */
 
 .other-skills {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1; grid-row: 1;
 }
 
 .active-listening {
-  grid-column: 2;
-  grid-row: 1;
+  grid-column: 2; grid-row: 1;
 }
 
 .public-speaking {
-  grid-column: 2;
-  grid-row: 2;
+  grid-column: 2; grid-row: 2;
 }
 
 .research {
-  grid-column: 2;
-  grid-row: 3;
+  grid-column: 2; grid-row: 3;
 }
 
 .scientific-writing {
-  grid-column: 2;
-  grid-row: 4;
+  grid-column: 2; grid-row: 4;
 }
 
 .popular-writing {
-  grid-column: 2;
-  grid-row: 5;
+  grid-column: 2; grid-row: 5;
 }
 
 .empathy {
-  grid-column: 2;
-  grid-row: 6;
+  grid-column: 2; grid-row: 6;
 }
 
 .enthusiasm {
-  grid-column: 2;
-  grid-row: 7;
+  grid-column: 2; grid-row: 7;
   align-self: start;
 }
 
 
-/* SMALL SCREEN */
 
-@media only screen and (max-width: 700px) {
-  
+
+/* ## MAIN: ABOUT */
+.about h2 {
+  padding-bottom: 1em;
+}
+
+.about h3 {
+  padding-bottom: 0.2em;
+}
+
+.about p {
+  padding-bottom: 1.8em;
+  padding-left: 1.5em;
+}
+
+/* # MAX 1000PX */
+
+@media only screen and (max-width: 1000px) {
+
+  /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
+
   .grid {
-    align-items: center;
+    align-items: start;
     display: grid;
-    grid-row-gap: 3vw;
-    grid-template-columns: 45vmax;
-    grid-template-rows: 60vmax;
+    grid-row-gap: 1vmax;
+    grid-row-gap: 1vmax;
+    grid-template-columns: 30vmax 30vmax;
+    grid-template-rows: 40vmax;
     justify-items: center;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     font-size: 1.5em;
   }
 
   .subgrid {
-    align-items: center;
+    align-items: start;
     display: grid;
-    grid-row-gap: 1.5vw;
+    grid-row-gap: 1vmax;
+    grid-template-columns: 30vmax;
+    grid-template-rows: 30vmax 10vmax;
+    justify-items: center;
+  }
+}
+
+
+/* # MAX 600PX */
+
+@media only screen and (max-width: 600px) {
+
+  /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
+
+  .grid {
+    align-items: start;
+    display: grid;
+    grid-row-gap: 1vmax;
+    grid-template-columns: 45vmax;
+    grid-template-rows: 60vmax;
+    justify-items: center;
+    grid-auto-flow: row;
+    font-size: 1.5em;
+  }
+
+
+  .subgrid {
+    align-items: start;
+    display: grid;
+    grid-row-gap: 1vmax;
     grid-template-columns: 45vmax;
     grid-template-rows: 45vmax 15vmax;
     justify-items: center;
   }
+}
 
-  .creation1 {
-    grid-column: 1;
-    grid-row: 1;
-  }
-  
-  .creation2 {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  
-  .creation3 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-  
-  .creation4 {
-    grid-column: 1;
-    grid-row: 4;
-  }
-  
-  .creation5 {
-    grid-column: 1;
-    grid-row: 5;
-  }
-  
-  .creation6 {
-    grid-column: 1;
-    grid-row: 6;
-  }
+
+
+/* # MAX 1000PX */
+
+@media only screen and (max-width: 700px) {
+
+/* ## MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
 
   .grid-skill {
     display: grid;
@@ -552,68 +541,58 @@ main {
     margin-bottom: 5vw;
   }
 
+  /* ### LANGUAGE SKILLS */
+
   .language-skills {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1; grid-row: 1;
   }
   
   .english {
-    grid-column: 1;
-    grid-row: 2;
+    grid-column: 1; grid-row: 2;
   }
   
   .spanish {
-    grid-column: 1;
-    grid-row: 3;
+    grid-column: 1; grid-row: 3;
   }
   
   .galician {
-    grid-column: 1;
-    grid-row: 4;
+    grid-column: 1; grid-row: 4;
   }
   
   .finnish {
-    grid-column: 1;
-    grid-row: 5;
+    grid-column: 1; grid-row: 5;
   }
   
   .portuguese {
-    grid-column: 1;
-    grid-row: 6;
+    grid-column: 1; grid-row: 6;
   }
   
   .html {
-    grid-column: 1;
-    grid-row: 7;
+    grid-column: 1; grid-row: 7;
   }
   
   .css {
-    grid-column: 1;
-    grid-row: 8;
+    grid-column: 1; grid-row: 8;
   }
   
   .csharp {
-    grid-column: 1;
-    grid-row: 9;
+    grid-column: 1; grid-row: 9;
   }
   
   .r {
-    grid-column: 1;
-    grid-row: 10;
+    grid-column: 1; grid-row: 10;
   }
   
-  .js {
-    grid-column: 1;
-    grid-row: 11;
+  .javascript {
+    grid-column: 1; grid-row: 11;
   }
   
   .binary {
-    grid-column: 1;
-    grid-row: 12;
+    grid-column: 1; grid-row: 12;
   }
   
   
-  /* IMAGE SOFTWARE SKILLS */
+  /* ### IMAGE SKILLS */
   
   .image-software {
     grid-column: 1;
@@ -645,8 +624,8 @@ main {
     grid-row: 6;
   }
   
-  /* VIDEO SOFTWARE */
-  
+
+  /* ### VIDEO SKILLS */
   
   .video-software {
     grid-column: 1;
@@ -674,7 +653,7 @@ main {
   }
   
   
-  /* GAME SOFTWARE */
+  /* ### GAME SKILLS */
   
   .game-software {
     grid-column: 1;
@@ -696,7 +675,8 @@ main {
     grid-row: 4;
   }
   
-  /* CITATION SOFTWARE */
+
+  /* ### CITATION SKILLS */
   
   .citation-software {
     grid-column: 1;
@@ -719,7 +699,7 @@ main {
   }
   
   
-  /* ART MEDIUMS */
+  /* ### ART SKILLS */
   
   .art-mediums {
     grid-column: 1;
@@ -747,7 +727,7 @@ main {
   }
   
   
-  /* COLLABORATION SKILLS */
+  /* ### COLLABORATON SKILLS */
   
   .collaboration-skills {
     grid-column: 1;
@@ -785,7 +765,7 @@ main {
   }
   
   
-  /* OTHER SKILLS */
+  /* ### OTHER SKILLS */
   
   .other-skills {
     grid-column: 1;
@@ -823,17 +803,4 @@ main {
     align-self: start;
   }
   
-}
-
-.about h2 {
-  padding-bottom: 1em;
-}
-
-.about h3 {
-  padding-bottom: 0.2em;
-}
-
-.about p {
-  padding-bottom: 1.8em;
-  padding-left: 1.5em;
 }
