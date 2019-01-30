@@ -140,26 +140,29 @@ main {
 
 
 /* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND)*/
-
 .grid {
   align-items: start;
   display: grid;
-  grid-column-gap: 1vmax;
   grid-row-gap: 1vmax;
-  grid-template-columns: 24vmax 24vmax 24vmax;
-  grid-template-rows: 33vmax;
+  grid-template-columns: 45vmax;
+  grid-template-rows: 60vmax;
   justify-items: center;
   grid-auto-flow: row;
+  font-size: 1.5em;
 }
+
 
 .subgrid {
   align-items: start;
   display: grid;
-  grid-template-columns: 24vmax;
-  grid-template-rows: 24vmax 8vmax;
-  justify-items: center;
   grid-row-gap: 1vmax;
+  grid-template-columns: 45vmax;
+  grid-template-rows: 45vmax 15vmax;
+  justify-items: center;
 }
+
+
+
 
 .thumbnail {
   align-self: stretch;
@@ -465,9 +468,11 @@ main {
   padding-left: 1.5em;
 }
 
-/* # MAX 1000PX */
 
-@media only screen and (max-width: 1000px) {
+
+/* # MIN 600PX */
+
+@media only screen and (min-width: 600px) {
 
   /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
 
@@ -475,7 +480,7 @@ main {
     align-items: start;
     display: grid;
     grid-row-gap: 1vmax;
-    grid-row-gap: 1vmax;
+    grid-column-gap: 1vmax;
     grid-template-columns: 30vmax 30vmax;
     grid-template-rows: 40vmax;
     justify-items: center;
@@ -494,37 +499,36 @@ main {
 }
 
 
-/* # MAX 600PX */
+/* # MIN 1000PX */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1000px) {
 
   /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
-
   .grid {
     align-items: start;
     display: grid;
+    grid-column-gap: 1vmax;
     grid-row-gap: 1vmax;
-    grid-template-columns: 45vmax;
-    grid-template-rows: 60vmax;
+    grid-template-columns: 24vmax 24vmax 24vmax;
+    grid-template-rows: 33vmax;
     justify-items: center;
     grid-auto-flow: row;
-    font-size: 1.5em;
   }
-
-
+  
   .subgrid {
     align-items: start;
     display: grid;
-    grid-row-gap: 1vmax;
-    grid-template-columns: 45vmax;
-    grid-template-rows: 45vmax 15vmax;
+    grid-template-columns: 24vmax;
+    grid-template-rows: 24vmax 8vmax;
     justify-items: center;
+    grid-row-gap: 1vmax;
   }
+
 }
 
 
 
-/* # MAX 1000PX */
+/* # MAX 700PX */
 
 @media only screen and (max-width: 700px) {
 
