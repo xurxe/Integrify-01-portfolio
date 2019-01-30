@@ -51,10 +51,17 @@ h3 {
 
 @media only screen and (max-width: 600px) {
 
+  /* # MAIN */
+  main {
+    padding: 3vw;
+    margin-left: 21vh;
+  }
+  
   /* # HEADER */
   header {
+    display: none;
     align-items: flex-start;
-    background-color: #8844bb;
+    background-color: #8844bbee;
     color: white;
     display: flex;
     flex-direction: column;
@@ -68,7 +75,6 @@ h3 {
     width: 17vh; /* this and padding = same as main margin*/
   }
   
-  /* ### HEADER SECTIONS */
   header section {
     width: auto;
   }
@@ -112,86 +118,79 @@ h3 {
     padding-bottom: 10vh;
   }
   
-  
-  /* # MAIN */
-  main {
-    margin-left: 21vh; /* Same as the width of the sidebar + padding */
-    margin-right: 5vw;
-    padding: 5vh;
-  }
-  
 }
 
 @media only screen and (min-width: 600px) {
 
+
+  /* # MAIN */
+  main {
+    margin-left: 30vh; /* Same as the width of the sidebar + padding */
+    margin-right: 5vw;
+    padding: 5vh;
+  }
+
+
 /* # HEADER */
-header {
-  align-items: flex-start;
-  background-color: #8844bb;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: 2.8vh;
-  height: 100%;
-  justify-content: flex-start;
-  letter-spacing: 0.4vh;
-  line-height: 4vh;
-  padding: 5vh;
-  position: fixed;
-  width: 20vh; /* this and padding = same as main margin*/
-}
+  header {
+    align-items: flex-start;
+    background-color: #8844bb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.8vh;
+    height: 100%;
+    justify-content: flex-start;
+    letter-spacing: 0.4vh;
+    line-height: 4vh;
+    padding: 5vh;
+    position: fixed;
+    width: 20vh; /* this and padding = same as main margin*/
+  }
 
-/* ### HEADER SECTIONS */
-header section {
-  width: auto;
-}
+  /* ### HEADER SECTIONS */
+  header section {
+    width: auto;
+  }
 
-header a {
-  color: white;
-}
+  header a {
+    color: white;
+  }
 
-header a:hover { /* idea instead of this: extend dot into line when hovering */
-  color: #ffeeaa;
-}
+  header a:hover { /* idea instead of this: extend dot into line when hovering */
+    color: #ffeeaa;
+  }
 
-.logo {
-  padding-bottom: 3vh;
-  width: 100%;
-} 
+  .logo {
+    padding-bottom: 3vh;
+    width: 100%;
+  } 
 
-.name-home { /* MAYBE: integrate with logo */
-  font-family: 'Ubuntu Mono', monospace;
-  padding-bottom: 5vh;
-}
+  .name-home { /* MAYBE: integrate with logo */
+    font-family: 'Ubuntu Mono', monospace;
+    padding-bottom: 5vh;
+  }
 
-.first-name {
-  font-size: 200%;
-  letter-spacing: 0.25em;
-  line-height: 1.1em;
-  text-transform: uppercase;
-}
+  .first-name {
+    font-size: 200%;
+    letter-spacing: 0.25em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+  }
 
-.last-name {
-  font-size: 130%;
-  letter-spacing: 0.45em;
-  text-transform: lowercase;
-}
+  .last-name {
+    font-size: 130%;
+    letter-spacing: 0.45em;
+    text-transform: lowercase;
+  }
 
-.portfolio, .personal {
-  padding-bottom: 5vh;
-}
+  .portfolio, .personal {
+    padding-bottom: 5vh;
+  }
 
-.social-media {
-  padding-bottom: 10vh;
-}
-
-
-/* # MAIN */
-main {
-  margin-left: 30vh; /* Same as the width of the sidebar + padding */
-  margin-right: 5vw;
-  padding: 5vh;
-}
+  .social-media {
+    padding-bottom: 10vh;
+  }
 
 }
 
@@ -235,50 +234,44 @@ main {
   .grid {
     align-items: start;
     display: grid;
-    grid-row-gap: 1vmax;
-    grid-template-columns: 45vmax;
-    grid-template-rows: 60vmax;
+    grid-template-columns: 57vw;
+    grid-template-rows: 66vw;
     justify-items: center;
     grid-auto-flow: row;
-    font-size: 1.5em;
+    font-size: 1.25rem;
   }
 
   .subgrid {
     align-items: start;
     display: grid;
-    grid-row-gap: 1vmax;
-    grid-template-columns: 45vmax;
-    grid-template-rows: 45vmax 15vmax;
+    grid-template-columns: 57vw;
+    grid-template-rows: 57vw 19vw;
     justify-items: center;
   }
+
 }
 
 /* ### MEDIUM SCREEN */
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
 
-  /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
-
   .grid {
     align-items: start;
     display: grid;
-    grid-row-gap: 1vmax;
-    grid-column-gap: 1vmax;
-    grid-template-columns: 30vmax 30vmax;
-    grid-template-rows: 40vmax;
+    grid-template-columns: 33vw 33vw;
+    grid-template-rows: 44vw;
     justify-items: center;
     grid-auto-flow: row;
-    font-size: 1.5em;
   }
 
   .subgrid {
     align-items: start;
     display: grid;
-    grid-row-gap: 1vmax;
-    grid-template-columns: 30vmax;
-    grid-template-rows: 30vmax 10vmax;
+    grid-template-columns: 33vw;
+    grid-template-rows: 33vw 11vw;
     justify-items: center;
   }
+
 }
 
 
@@ -286,34 +279,32 @@ main {
 
 @media only screen and (min-width: 900px) {
 
-  /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
   .grid {
     align-items: start;
     display: grid;
-    grid-column-gap: 1vmax;
-    grid-row-gap: 1vmax;
-    grid-template-columns: 24vmax 24vmax 24vmax;
-    grid-template-rows: 33vmax;
+    grid-template-columns: 25.5vw 25.5vw 25.5vw;
+    grid-template-rows: 34vw;
     justify-items: center;
     grid-auto-flow: row;
+    font-size: 0.8rem;
   }
   
   .subgrid {
     align-items: start;
     display: grid;
-    grid-template-columns: 24vmax;
-    grid-template-rows: 24vmax 8vmax;
+    grid-template-columns: 25.5vw;
+    grid-template-rows: 25.5vw 8.5vw;
     justify-items: center;
-    grid-row-gap: 1vmax;
   }
-}
 
+}
 
 .thumbnail {
   align-self: stretch;
   grid-row:1;
   grid-column:1;
   justify-self: stretch;
+  padding: 2vw;
 }
 
 .legend {
@@ -321,6 +312,7 @@ main {
   justify-self: start;
   grid-row:2;
   grid-column:1;
+  padding: 2vw;
 }
 
 
@@ -340,7 +332,6 @@ main {
     grid-template-rows: auto;
     justify-items: start;
     margin-bottom: 5vw;
-    margin-right: 3vw;
   }
 
   .subgrid-skill {
