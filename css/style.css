@@ -49,6 +49,80 @@ h3 {
   letter-spacing: 1.2;
 }
 
+@media only screen and (max-width: 600px) {
+
+  /* # HEADER */
+  header {
+    align-items: flex-start;
+    background-color: #8844bb;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 2vh;
+    height: 100%;
+    justify-content: flex-start;
+    letter-spacing: 0.4vh;
+    line-height: 4vh;
+    padding: 2vh;
+    position: fixed;
+    width: 17vh; /* this and padding = same as main margin*/
+  }
+  
+  /* ### HEADER SECTIONS */
+  header section {
+    width: auto;
+  }
+  
+  header a {
+    color: white;
+  }
+  
+  header a:hover { /* idea instead of this: extend dot into line when hovering */
+    color: #ffeeaa;
+  }
+  
+  .logo {
+    padding-bottom: 3vh;
+    width: 100%;
+  } 
+  
+  .name-home { /* MAYBE: integrate with logo */
+    font-family: 'Ubuntu Mono', monospace;
+    padding-bottom: 5vh;
+  }
+  
+  .first-name {
+    font-size: 200%;
+    letter-spacing: 0.25em;
+    line-height: 1.1em;
+    text-transform: uppercase;
+  }
+  
+  .last-name {
+    font-size: 130%;
+    letter-spacing: 0.45em;
+    text-transform: lowercase;
+  }
+  
+  .portfolio, .personal {
+    padding-bottom: 5vh;
+  }
+  
+  .social-media {
+    padding-bottom: 10vh;
+  }
+  
+  
+  /* # MAIN */
+  main {
+    margin-left: 21vh; /* Same as the width of the sidebar + padding */
+    margin-right: 5vw;
+    padding: 5vh;
+  }
+  
+}
+
+@media only screen and (min-width: 600px) {
 
 /* # HEADER */
 header {
@@ -112,13 +186,13 @@ header a:hover { /* idea instead of this: extend dot into line when hovering */
 }
 
 
-
-
 /* # MAIN */
 main {
   margin-left: 30vh; /* Same as the width of the sidebar + padding */
   margin-right: 5vw;
   padding: 5vh;
+}
+
 }
 
 /* ## MAIN INTRO (HELLO + PASSIONS) */
@@ -156,7 +230,7 @@ main {
 
 /* ### SMALL SCREEN */
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 600px) {
 
   .grid {
     align-items: start;
@@ -181,7 +255,7 @@ main {
 
 /* ### MEDIUM SCREEN */
 
-@media only screen and (min-width: 600px) and (max-width: 899px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
 
   /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
 
@@ -254,17 +328,46 @@ main {
 /* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
 
 /* ### SMALLER SCREENS */
-@media only screen and (max-width: 699px) {
+@media only screen and (max-width: 700px) {
   
   .grid-skill {
     display: grid;
-    align-items: center;
+    align-items: end;
+    grid-auto-flow: row;
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
-    grid-template-columns: auto;
-    grid-template-rows: 3vw;
-    justify-items: stretch;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
     margin-bottom: 5vw;
+    margin-right: 3vw;
+  }
+
+  .subgrid-skill {
+    display: grid;
+    grid-column-gap: 1vw;
+    grid-template-columns: 25vw 20vw;
+    grid-template-rows: auto;
+    justify-items: start;
+    grid-auto-flow: column;
+  }
+
+  .skill-type {
+    font-weight: 900;
+    color: #622B8D;
+    justify-self: start;
+    grid-column: 1;
+  }
+
+  .skill-name {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .skill-level {
+    grid-column: 2;
+    grid-row: 1 ;
+    height: 1.5em;
   }
 
   /* #### LANGUAGE SKILLS */
@@ -485,9 +588,13 @@ main {
   .empathy {
     grid-column: 1; grid-row: 6;
   }
+
+  .research {
+    grid-column: 1; grid-row: 7;
+  }
   
   .enthusiasm {
-    grid-column: 1; grid-row: 7;
+    grid-column: 1; grid-row: 8;
     align-self: start;
   }
 }
@@ -497,20 +604,20 @@ main {
 @media only screen and (min-width: 700px) {
   .grid-skill {
     display: grid;
-    align-items: center;
+    align-items: end;
     grid-column-gap: 2vw;
     grid-row-gap: 2vw;
     grid-template-columns: 30vw auto;
     grid-template-rows: 3vw;
-    justify-items: stretch;
+    justify-items: start;
     margin-bottom: 5vw;
-    align-items: end;
+
   }
 
   .subgrid-skill {
     display: grid;
     grid-column-gap: 1vw;
-    grid-template-columns: 10em 50%;
+    grid-template-columns: 10em 10em;
     grid-template-rows: 3vw;
     justify-items: start;
     grid-auto-flow: column;
@@ -531,7 +638,7 @@ main {
   .skill-level {
     grid-column: 2;
     grid-row: 1 ;
-    height: 100%
+    height: 1.5em;
   }
 
 
@@ -762,5 +869,4 @@ main {
     grid-column: 2; grid-row: 7;
     align-self: start;
   }
-
 }
