@@ -48,13 +48,105 @@
       <section class="intro">
         <h1>contact.</h1>
 
-        <p>coming soon.</p>
+        <p>(please note: the contact form below is not active yet)</p>
+        
+
 
       </section>
+      <form>
+        <label for="first-name">first name:</label>
+        <input
+        required
+        type="text"
+        id="first-name"
+        placeholder="your first name or initial"
+        pattern="[A-Z]{1}[a-z]{0,14}"
+        minlength="1"
+        maxlength="15"
+        />
 
+        <br />
 
+        <label for="last-name">last name:</label>
+        <input 
+        type="text"
+        id="last-name"
+        placeholder="your last name or initial"
+        pattern="[A-Z]{1}[a-z]{0,14}"
+        minlength="1"
+        maxlength="15"
+        />
 
- 
+        </br>
+
+        <fieldset id="pronouns">
+          <legend class="pronouns">pronouns:</legend>
+
+          <input 
+          type="checkbox"
+          name="pronouns"
+          id="they"
+          value="they"
+          />
+          <label for="they">they</label>
+          
+          <input 
+          type="checkbox"
+          name="pronouns"
+          id="she"
+          value="she"
+          />
+          <label for="she">she</label>
+
+          <input 
+          type="checkbox"
+          name="pronouns"
+          id="he"
+          value="he"
+          />
+          <label for="he">he</label>
+
+          <input 
+          type="checkbox"
+          name="pronouns"
+          id="other"
+          value="other"
+          />
+          <label for="other">other:</label>
+
+          <input 
+          type="text"
+          id="other-pronoun"
+          placeholder="your pronouns"
+          minlength="1"
+          maxlength="15"
+          />
+
+        </fieldset>
+
+        <br />
+
+        <label for="email">email:</label>
+        <input 
+        type="text"
+        id="email"
+        placeholder="your@email.com"
+        pattern="[A-Z]{1}[a-z]{0,14}"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+
+        <br />
+
+        <label for="message">message:</label> <br />
+        <textarea
+        id="message"
+        name="message"
+        >
+        </textarea>
+
+        <input type="submit" value="submit"/>
+
+        </form>
     </main>
     </body>
 </html>

@@ -13,7 +13,7 @@
 html {
   color: #311845;
   font-family: 'Sarabun', sans-serif;
-  font-size: 2.3vw;
+  font-size: 2.2vw;
   font-weight: 200;
   letter-spacing: 0.05vw;
   text-align: left; 
@@ -331,7 +331,7 @@ h3 {
   }
 
   .skill-level {
-    grid-column: 2; grid-row: 1 ;
+    grid-column: 2; grid-row: 1;
     height: 1.5em;
   }
 
@@ -863,3 +863,70 @@ h3 {
   padding-bottom: 1.8em;
   padding-left: 1.5em;
 }
+
+/* # FORM **************************************************************************************************** */
+
+form {
+  font-size: 0.7rem;
+  line-height: 3em;
+}
+
+input[type="text"] {
+  width: 20vw;
+  padding: 1vw;
+  margin: 1vw;
+  box-sizing: border-box;
+  font-size: 0.8em;
+  display: inline-block;
+  border: 1px solid #c3a1dd;
+  background-color: #f3ecf8;
+}
+
+#other-pronoun {
+  margin: 0 1.2vw;
+  width: 13vw;
+}
+
+#email {
+  width: 30vw;
+}
+
+fieldset {
+  border: none;
+  float: left;
+}
+
+.pronouns {
+  float: left;
+}
+
+input[type="checkbox"] {
+margin-left: 1vw;
+} 
+
+#they {
+  margin-left: 2vw;
+}
+
+textarea {
+  width: 60vw;
+  height: 20vh;
+  border: 1px solid #c3a1dd;
+  background-color: #f3ecf8;
+}
+
+::placeholder {
+  color: #ab7ccf;
+  opacity: 1;
+}
+
+input[type="submit"] {
+  padding: 1.3vw 2vw;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  display: block;
+  border: 1px solid #c3a1dd;
+  background-color: #9356c1;
+  color: white;
+  margin-left: 50vw;
+  } 
