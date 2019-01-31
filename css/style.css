@@ -1,10 +1,8 @@
 @charset "UFT-8";
 
-/* COLOR SCHEME
-https://www.color-hex.com/color/8844bb
-*/
+/* COLOR SCHEME https://www.color-hex.com/color/8844bb */
 
-/* # GENERAL */
+/* # GENERAL ************************************************************************************************* */
 
 * {
   margin: 0;
@@ -15,8 +13,8 @@ https://www.color-hex.com/color/8844bb
 html {
   color: #311845;
   font-family: 'Sarabun', sans-serif;
-  font-weight: 200;
   font-size: 2.3vw;
+  font-weight: 200;
   letter-spacing: 0.05vw;
   text-align: left; 
 }
@@ -24,24 +22,24 @@ html {
 h1 {
   color: #8844bb;
   font-size: 1.728rem;
-  font-weight: 700;
   letter-spacing: 0.1em;
+  font-weight: 700;
   line-height: 2.3rem;
   padding-bottom: 1rem;
 }
 
 h2, .larger {
+  color: #6c3695;
   font-size: 1.44rem;
   font-weight: 700;
-  color: #6c3695;
 }
 
 h3 {
+  color: #512870;
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.1em;
   padding-bottom: 0.3em;
-  color: #512870;
 }
 
 .italic {
@@ -49,25 +47,28 @@ h3 {
   letter-spacing: 1.2;
 }
 
+/* # HEADER AND MAIN ***************************************************************************************** */
+
+/* ## UNDER 500PX ********************************************************************************** */
+
 @media only screen and (max-width: 500px) {
 
-  /* # MAIN */
+  /* ### MAIN **************************************************************************** */
   main {
-    padding: 5vw;
     margin-left: 30vw;
+    padding: 5vw;
   }
   
-  /* # HEADER */
+  /* ### HEADER ************************************************************************** */
   header {
-    display: none;
+    display: flex;
     align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: #8844bb;
     color: white;
-    display: flex;
-    flex-direction: column;
     font-size: 2.8vw;
     height: 100%;
-    justify-content: flex-start;
     letter-spacing: 0.4vw;
     line-height: 5vw;
     padding: 5vw;
@@ -75,6 +76,8 @@ h3 {
     width: 20vw; /* this and padding = same as main margin*/
   }
   
+  /* ### HEADER SECTIONS ***************************************************************** */
+
   header section {
     width: auto;
   }
@@ -120,10 +123,12 @@ h3 {
   
 }
 
+/* ## OVER 500PX *********************************************************************************** */
+
 @media only screen and (min-width: 500px) {
 
 
-  /* # MAIN */
+  /* ### MAIN **************************************************************************** */
   main {
     margin-left: 30vh; /* Same as the width of the sidebar + padding */
     margin-right: 5vw;
@@ -131,13 +136,13 @@ h3 {
   }
 
 
-/* # HEADER */
+/* ### HEADER **************************************************************************** */
   header {
+    display: flex;
     align-items: flex-start;
+    flex-direction: column;
     background-color: #8844bb;
     color: white;
-    display: flex;
-    flex-direction: column;
     font-size: 2.8vh;
     height: 100%;
     justify-content: flex-start;
@@ -148,7 +153,7 @@ h3 {
     width: 20vh; /* this and padding = same as main margin*/
   }
 
-  /* ### HEADER SECTIONS */
+  /* ### HEADER SECTIONS ***************************************************************** */
   header section {
     width: auto;
   }
@@ -194,56 +199,27 @@ h3 {
 
 }
 
-/* ## MAIN INTRO (HELLO + PASSIONS) */
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5vw;
-}
-
-.hello {
-  max-width: 14.5em;
-}
-
-.passions p {
-  padding-bottom: 0.4em;
-}
-
-/* ## MAIN: ABOUT */
-.about h2 {
-  padding-bottom: 1em;
-}
-
-.about h3 {
-  padding-bottom: 0.2em;
-}
-
-.about p {
-  padding-bottom: 1.8em;
-  padding-left: 1.5em;
-}
 
 
-/* ##  MAIN GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND)*/
+/* # GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) ****************************************************** */
 
-/* ### SMALL SCREEN */
+/* ## UNDER 600PX ********************************************************************************** */
 
 @media only screen and (max-width: 600px) {
 
   .grid {
-    align-items: start;
     display: grid;
+    align-items: start;
+    grid-auto-flow: row;
     grid-template-columns: 57vw;
     grid-template-rows: 66vw;
     justify-items: center;
-    grid-auto-flow: row;
     font-size: 1.25rem;
   }
 
   .subgrid {
-    align-items: start;
     display: grid;
+    align-items: start;
     grid-template-columns: 57vw;
     grid-template-rows: 57vw 19vw;
     justify-items: center;
@@ -251,22 +227,22 @@ h3 {
 
 }
 
-/* ### MEDIUM SCREEN */
+/* ## OVER 600PX AND UNDER 900PX ******************************************************************* */
 
 @media only screen and (min-width: 600px) and (max-width: 900px) {
 
   .grid {
-    align-items: start;
     display: grid;
+    align-items: start;
+    grid-auto-flow: row;
     grid-template-columns: 33vw 33vw;
     grid-template-rows: 44vw;
     justify-items: center;
-    grid-auto-flow: row;
   }
 
   .subgrid {
-    align-items: start;
     display: grid;
+    align-items: start;
     grid-template-columns: 33vw;
     grid-template-rows: 33vw 11vw;
     justify-items: center;
@@ -275,23 +251,23 @@ h3 {
 }
 
 
-/* ### LARGE SCREEN */
+/* ## OVER 900 PX ********************************************************************************** */
 
 @media only screen and (min-width: 900px) {
 
   .grid {
-    align-items: start;
     display: grid;
+    align-items: start;
+    grid-auto-flow: row;
     grid-template-columns: 25.5vw 25.5vw 25.5vw;
     grid-template-rows: 34vw;
     justify-items: center;
-    grid-auto-flow: row;
     font-size: 0.8rem;
   }
   
   .subgrid {
-    align-items: start;
     display: grid;
+    align-items: start;
     grid-template-columns: 25.5vw;
     grid-template-rows: 25.5vw 8.5vw;
     justify-items: center;
@@ -310,16 +286,16 @@ h3 {
 .legend {
   align-self: start;
   justify-self: start;
-  grid-row:2;
-  grid-column:1;
+  grid-row: 2;
+  grid-column: 1;
   padding: 0 2vw 2vw 0;
 }
 
 
 
-/* ##  MAIN GRID (SKILLS) AND SUBGRIDS (NAME + STARS) */
+/* #  GRID (SKILLS) AND SUBGRIDS (NAME + STARS) ************************************************************** */
 
-/* ### SMALLER SCREENS */
+/* ## UNDER 700PX ********************************************************************************** */
 @media only screen and (max-width: 700px) {
   
   .grid-skill {
@@ -336,32 +312,30 @@ h3 {
 
   .subgrid-skill {
     display: grid;
+    grid-auto-flow: column;
     grid-column-gap: 1vw;
     grid-template-columns: 25vw 20vw;
     grid-template-rows: auto;
     justify-items: start;
-    grid-auto-flow: column;
   }
 
   .skill-type {
-    font-weight: 900;
     color: #622B8D;
-    justify-self: start;
+    font-weight: 900;
     grid-column: 1;
+    justify-self: start;
   }
 
   .skill-name {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1; grid-row: 1;
   }
 
   .skill-level {
-    grid-column: 2;
-    grid-row: 1 ;
+    grid-column: 2; grid-row: 1 ;
     height: 1.5em;
   }
 
-  /* #### LANGUAGE SKILLS */
+  /* ### LANGUAGE SKILLS ***************************************************************** */
 
   .language-skills {
     grid-column: 1; grid-row: 1;
@@ -412,7 +386,7 @@ h3 {
   }
   
   
-  /* #### IMAGE SKILLS */
+  /* ### IMAGE SKILLS ******************************************************************** */
   
   .image-software {
     grid-column: 1; grid-row: 1;
@@ -439,7 +413,7 @@ h3 {
   }
   
 
-  /* #### VIDEO SKILLS */
+  /* ### VIDEO SKILLS ******************************************************************** */
   
   .video-software {
     grid-column: 1; grid-row: 1;
@@ -462,7 +436,7 @@ h3 {
   }
   
   
-  /* #### GAME SKILLS */
+  /* ### GAME SKILLS ********************************************************************* */
   
   .game-software {
     grid-column: 1; grid-row: 1;
@@ -481,7 +455,7 @@ h3 {
   }
   
 
-  /* #### CITATION SKILLS */
+  /* ### CITATION SKILLS ***************************************************************** */
   
   .citation-software {
     grid-column: 1; grid-row: 1;
@@ -500,7 +474,7 @@ h3 {
   }
   
   
-  /* #### ART SKILLS */
+  /* ### ART SKILLS ********************************************************************** */
   
   .art-mediums {
     grid-column: 1; grid-row: 1;
@@ -523,7 +497,7 @@ h3 {
   }
   
   
-  /* #### COLLABORATON SKILLS */
+  /* ### COLLABORATON SKILLS ************************************************************* */
   
   .collaboration-skills {
     grid-column: 1; grid-row: 1;
@@ -554,7 +528,7 @@ h3 {
   }
   
   
-  /* #### OTHER SKILLS */
+  /* ### OTHER SKILLS ******************************************************************** */
   
   .other-skills {
     grid-column: 1; grid-row: 1;
@@ -590,7 +564,7 @@ h3 {
   }
 }
 
-/* LARGER SCREENS */
+/* ##  OVER 700PX ********************************************************************************** */
 
 @media only screen and (min-width: 700px) {
   .grid-skill {
@@ -607,33 +581,31 @@ h3 {
 
   .subgrid-skill {
     display: grid;
+    grid-auto-flow: column;
     grid-column-gap: 1vw;
     grid-template-columns: 10em 10em;
     grid-template-rows: 3vw;
     justify-items: start;
-    grid-auto-flow: column;
   }
 
   .skill-type {
-    font-weight: 900;
     color: #622B8D;
-    justify-self: stretch;
+    font-weight: 900;
     grid-column: 1;
+    justify-self: stretch;
   }
 
   .skill-name {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 1; grid-row: 1;
   }
 
   .skill-level {
-    grid-column: 2;
-    grid-row: 1 ;
+    grid-column: 2; grid-row: 1 ;
     height: 1.5em;
   }
 
 
-  /* ### LANGUAGE SKILLS */
+  /* ### LANGUAGE SKILLS ***************************************************************** */
 
   .language-skills {
     grid-column: 1; grid-row: 1;
@@ -710,7 +682,7 @@ h3 {
     grid-column: 2; grid-row: 5;
   }
 
-  /* ### VIDEO SKILLS */
+  /* ### VIDEO SKILLS ******************************************************************** */
 
 
   .video-skills {
@@ -753,7 +725,7 @@ h3 {
   }
 
 
-  /* ### CITATION SKILLS */
+  /* ### CITATION SKILLS ***************************************************************** */
 
   .citation-skills {
     grid-column: 1; grid-row: 1;
@@ -772,7 +744,7 @@ h3 {
   }
 
 
-  /* ### ART SKILLS */
+  /* ### ART SKILLS ********************************************************************** */
 
   .art-skills {
     grid-column: 1; grid-row: 1;
@@ -795,7 +767,7 @@ h3 {
   }
 
 
-  /* COLLABORATION SKILLS */
+  /* ### COLLABORATION SKILLS ************************************************************ */
 
   .collaboration-skills {
     grid-column: 1; grid-row: 1;
@@ -826,7 +798,7 @@ h3 {
   }
 
 
-  /* ### OTHER SKILLS */
+  /* ### OTHER SKILLS ******************************************************************** */
 
   .other-skills {
     grid-column: 1; grid-row: 1;
@@ -860,4 +832,34 @@ h3 {
     grid-column: 2; grid-row: 7;
     align-self: start;
   }
+}
+
+/* # INDEX TOP *********************************************************************************************** */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+
+.hello {
+  max-width: 14.5em;
+}
+
+.passions p {
+  padding-bottom: 0.4em;
+}
+
+/* ## MAIN: ABOUT */
+.about h2 {
+  padding-bottom: 1em;
+}
+
+.about h3 {
+  padding-bottom: 0.2em;
+}
+
+.about p {
+  padding-bottom: 1.8em;
+  padding-left: 1.5em;
 }
