@@ -60,7 +60,7 @@
         type="text"
         id="first-name"
         placeholder="your first name or initial"
-        pattern="[A-Z]{1}[a-z]{0,14}"
+        pattern="[A-Z]{1}[A-Za-z- àâäôéèëêïîçùûüÿæœÀÂÄÔÉÈËÊÏÎŸÇÙÛÜÆŒößÖáíñóúÁÍÑÓÚąćęłńśźżĄĆĘŁŃŚŹŻ]{0,14}"
         minlength="1"
         maxlength="15"
         />
@@ -72,9 +72,9 @@
         type="text"
         id="last-name"
         placeholder="your last name or initial"
-        pattern="[A-Z]{1}[a-z]{0,14}"
+        pattern="[A-Z]{1}[A-Za-z- àâäôéèëêïîçùûüÿæœÀÂÄÔÉÈËÊÏÎŸÇÙÛÜÆŒößÖáíñóúÁÍÑÓÚąćęłńśźżĄĆĘŁŃŚŹŻ]{0,24}"
         minlength="1"
-        maxlength="15"
+        maxlength="25"
         />
 
         <br />
@@ -131,7 +131,7 @@
         type="text"
         id="email"
         placeholder="your@email.com"
-        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        pattern="[a-z0-9._%+-]+@[a-z0-9.]+\.[a-z]{2,}$"
         />
 
         <br />
