@@ -16,8 +16,8 @@ html {
   color: #311845;
   font-family: 'Sarabun', sans-serif;
   font-weight: 200;
-  font-size: 2vmax;
-  letter-spacing: 0.05vmax;
+  font-size: 2.3vw;
+  letter-spacing: 0.05vw;
   text-align: left; 
 }
 
@@ -49,30 +49,30 @@ h3 {
   letter-spacing: 1.2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
 
   /* # MAIN */
   main {
-    padding: 3vw;
-    margin-left: 21vh;
+    padding: 5vw;
+    margin-left: 30vw;
   }
   
   /* # HEADER */
   header {
     display: none;
     align-items: flex-start;
-    background-color: #8844bbee;
+    background-color: #8844bb;
     color: white;
     display: flex;
     flex-direction: column;
-    font-size: 2vh;
+    font-size: 2.5vw;
     height: 100%;
     justify-content: flex-start;
-    letter-spacing: 0.4vh;
-    line-height: 4vh;
-    padding: 2vh;
+    letter-spacing: 0.4vw;
+    line-height: 4vw;
+    padding: 5vw;
     position: fixed;
-    width: 17vh; /* this and padding = same as main margin*/
+    width: 20vw; /* this and padding = same as main margin*/
   }
   
   header section {
@@ -88,13 +88,13 @@ h3 {
   }
   
   .logo {
-    padding-bottom: 3vh;
+    padding-bottom: 3vw;
     width: 100%;
   } 
   
   .name-home { /* MAYBE: integrate with logo */
     font-family: 'Ubuntu Mono', monospace;
-    padding-bottom: 5vh;
+    padding-bottom: 5vw;
   }
   
   .first-name {
@@ -111,16 +111,16 @@ h3 {
   }
   
   .portfolio, .personal {
-    padding-bottom: 5vh;
+    padding-bottom: 5vw;
   }
   
   .social-media {
-    padding-bottom: 10vh;
+    padding-bottom: 10vw;
   }
   
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 550px) {
 
 
   /* # MAIN */
@@ -304,7 +304,7 @@ h3 {
   grid-row:1;
   grid-column:1;
   justify-self: stretch;
-  padding: 2vw;
+  padding: 0 2vw 2vw 0;
 }
 
 .legend {
@@ -312,7 +312,7 @@ h3 {
   justify-self: start;
   grid-row:2;
   grid-column:1;
-  padding: 2vw;
+  padding: 0 2vw 2vw 0;
 }
 
 
