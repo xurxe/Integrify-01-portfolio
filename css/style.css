@@ -19,6 +19,12 @@ html {
   text-align: left; 
 }
 
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vw;
+}
+
 h1 {
   color: #8844bb;
   font-size: 1.728rem;
@@ -127,14 +133,12 @@ h3 {
 
 @media only screen and (min-width: 500px) {
 
-
   /* ### MAIN **************************************************************************** */
   main {
     margin-left: 30vh; /* Same as the width of the sidebar + padding */
     margin-right: 5vw;
     padding: 5vh;
   }
-
 
 /* ### HEADER **************************************************************************** */
   header {
@@ -196,9 +200,7 @@ h3 {
   .social-media {
     padding-bottom: 10vh;
   }
-
 }
-
 
 
 /* # GRID (CREATIONS) AND SUBGRIDS (THUMBNAIL + LEGEND) ****************************************************** */
@@ -836,12 +838,6 @@ h3 {
 
 /* # INDEX TOP *********************************************************************************************** */
 
-.intro {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 5vw;
-}
-
 .hello {
   max-width: 14.5em;
 }
@@ -873,13 +869,13 @@ form {
 
 input[type="text"] {
   width: 20vw;
-  padding: 1vw;
+  padding: 1em;
   margin: 1vw;
   box-sizing: border-box;
   font-size: 0.8em;
   display: inline-block;
   border: 1px solid #c3a1dd;
-  background-color: #f3ecf8;
+  background-color: white;
 }
 
 #other-pronoun {
@@ -911,8 +907,11 @@ margin-left: 1vw;
 textarea {
   width: 60vw;
   height: 20vh;
-  border: 1px solid #c3a1dd;
-  background-color: #f3ecf8;
+  border: 1px solid #cfb4e3;
+  background-color: white;
+  color: #ab7ccf;
+  font-size: 1em;
+  padding: 1em;
 }
 
 ::placeholder {
@@ -925,7 +924,7 @@ input[type="submit"] {
   box-sizing: border-box;
   font-size: 1.1em;
   display: block;
-  border: 1px solid #c3a1dd;
+  border: 1px solid #cfb4e3;
   background-color: #9356c1;
   color: white;
   margin-left: 50vw;
