@@ -868,14 +868,14 @@ form {
 }
 
 input[type="text"] {
-  width: 20vw;
-  padding: 1em;
-  margin: 1vw;
-  box-sizing: border-box;
-  font-size: 0.8em;
-  display: inline-block;
   border: 1px solid #c3a1dd;
   background-color: white;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 0.8em;
+  margin: 1vw;
+  padding: 1em;
+  width: 20vw;
 }
 
 #other-pronoun {
@@ -897,7 +897,7 @@ fieldset {
 }
 
 input[type="checkbox"] {
-margin-left: 1vw;
+  margin-left: 1vw;
 } 
 
 #they {
@@ -905,13 +905,13 @@ margin-left: 1vw;
 }
 
 textarea {
-  width: 55vw;
-  height: 20vh;
-  border: 1px solid #cfb4e3;
   background-color: white;
+  border: 1px solid #cfb4e3;
   color: #ab7ccf;
   font-size: 1em;
+  height: 20vh;
   padding: 1em;
+  width: 55vw;
 }
 
 ::placeholder {
@@ -920,12 +920,12 @@ textarea {
 }
 
 input[type="submit"] {
-  padding: 1.3vw 2vw;
-  box-sizing: border-box;
-  font-size: 1.1em;
-  display: block;
-  border: 1px solid #cfb4e3;
   background-color: #9356c1;
+  border: 1px solid #cfb4e3;
+  box-sizing: border-box;
   color: white;
+  display: block;
+  font-size: 1.1em;
   margin-left: 48vw;
-  } 
+  padding: 1.3vw 2vw;
+} 
