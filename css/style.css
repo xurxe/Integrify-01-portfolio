@@ -53,6 +53,10 @@ h3 {
   letter-spacing: 1.2;
 }
 
+.required {
+  color: #9356c1;
+}
+
 /* # HEADER AND MAIN ***************************************************************************************** */
 
 /* ## UNDER 500PX ********************************************************************************** */
@@ -878,6 +882,14 @@ input[type="text"] {
   width: 20vw;
 }
 
+#last-name {
+  margin-left: 2.25vw;
+}
+
+#they {
+  margin-left: 2vw;
+}
+
 #other-pronoun {
   margin: 0 1.2vw;
   width: 13vw;
@@ -899,10 +911,6 @@ fieldset {
 input[type="checkbox"] {
   margin-left: 1vw;
 } 
-
-#they {
-  margin-left: 2vw;
-}
 
 textarea {
   background-color: white;
