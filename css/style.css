@@ -905,7 +905,7 @@ margin-left: 1vw;
 }
 
 textarea {
-  width: 60vw;
+  width: 55vw;
   height: 20vh;
   border: 1px solid #cfb4e3;
   background-color: white;
@@ -927,5 +927,5 @@ input[type="submit"] {
   border: 1px solid #cfb4e3;
   background-color: #9356c1;
   color: white;
-  margin-left: 50vw;
+  margin-left: 48vw;
   } 
