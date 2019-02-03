@@ -1,12 +1,12 @@
 # My professional portfolio
 
-Hi! My name is Xurxe and this my first professional portfolio. Learning to code as I go along :)  
-Please note that the site is still very incomplete!
+Hi! My name is Xurxe and this is attempt at a professional portfolio. Learning to code as I go along :)  
+
+Please note: I am no longer working on this project, as I decided to rebuild it over at https://github.com/xurxe/portfolio-2.0
 
 ## Demo
 
-For now you can find the work-in-progress here: https://xurxe.github.io/portfolio/  
-Once the site is complete, I'll host it in my own domain.
+Check it out here: https://xurxe.github.io/portfolio/  
 
 ## Author
 
