@@ -1,4 +1,4 @@
-# My portfolio
+# Portfolio
 
 Hi! My name is Xurxe and this is my first attempt at a professional portfolio. Learning to code as I go along :)  
 
