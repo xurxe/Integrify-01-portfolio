@@ -6,7 +6,7 @@ Please note: I am no longer working on this project, as I decided to rebuild it 
 
 ## Demo
 
-Check it out here: https://xurxe.github.io/portfolio/  
+https://xurxe.github.io/Integrify-01-portfolio/ 
 
 ## Author
 
